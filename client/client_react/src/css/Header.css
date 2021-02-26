@@ -1,0 +1,16 @@
+
+
+.Header{
+    font-family: NotoSans-Medium;
+    height: 7rem;
+    padding-top:1.2rem;
+}
+.Header h1{
+}
+.Title{
+    
+}
+@font-face{
+    font-family:"NotoSans-Medium";
+    src:url("../NotoSans-hinted/NotoSans-ExtraBold.ttf");
+}

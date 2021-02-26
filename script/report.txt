@@ -1,0 +1,10 @@
+
+
+domain = web3.utils.fromUtf8("");
+not.notifyHandler(domain, multi4, ip,{from : acc[10]})
+
+domain1 = web3.utils.fromUtf8("");
+not.notifyHandler(domain1, multi4, ip,{from : acc[10]}) 
+
+domain2 = web3.utils.fromUtf8("");
+not.notifyHandler(domain2, multi4, ip,{from : acc[10]}) 

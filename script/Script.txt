@@ -1,0 +1,74 @@
+﻿copyrighter1= web3.utils.fromAscii("Netflix")
+jud.registerCopyrighter(copyrighter1, {from:acc[0]})
+copyrighter2 = web3.utils.fromAscii("Naver")
+jud.registerCopyrighter(copyrighter2, {from:acc[1]})
+copyrighter3 = web3.utils.fromAscii("Bts")
+jud.registerCopyrighter(copyrighter3, {from:acc[2]})
+copyrighter4 = web3.utils.fromAscii("Imagine dragons")
+jud.registerCopyrighter(copyrighter4, {from:acc[3]})
+copyrighter5 = web3.utils.fromAscii("Tving")
+jud.registerCopyrighter(copyrighter5, {from:acc[4]})
+copyrighter6 = web3.utils.fromAscii("Wavve")
+jud.registerCopyrighter(copyrighter6, {from:acc[5]})
+copyrighter7 = web3.utils.fromAscii("Watcha")
+jud.registerCopyrighter(copyrighter7, {from:acc[6]})
+copyrighter8 = web3.utils.fromAscii("Hulu")
+jud.registerCopyrighter(copyrighter8, {from:acc[7]})
+copyrighter9 = web3.utils.fromAscii("Disney")
+jud.registerCopyrighter(copyrighter9, {from:acc[8]})
+
+multi1 = web3.utils.fromUtf8("The Game Of Thrones")
+multi2 = web3.utils.fromUtf8("bts - On")
+multi3 = web3.utils.fromUtf8("Frozen")
+multi4 = web3.utils.fromUtf8("Its Okay to Not Be Okay")
+multi5 = web3.utils.fromUtf8("외모지상주의")
+multi6 = web3.utils.fromUtf8("Radioactive")
+multi7 = web3.utils.fromUtf8("あなたの番です")
+multi8 = web3.utils.fromUtf8("Stranger Things")
+multi9 = web3.utils.fromUtf8("Believer")
+multi10 = web3.utils.fromUtf8("Zootopia")
+multi11 = web3.utils.fromUtf8("삼시세끼 어촌편5")
+val = await web3.utils.toWei("1.10", "ether")
+val2 = "1000000000000000000000"
+val3 = "6700000000000000000000"
+val4 = "120000000000000000000"
+val5 = "220000000000000000000"
+val6 = "270000000000000000000"
+val7 = "130000000000000000000"
+val8 = "180000000000000000000"
+val9 = "50000000000000000000"
+
+jud.registerDefendee(multi1, val, val2, 3, {from:acc[6], value : val})
+jud.registerDefendee(multi2, val, val2, 3, {from:acc[2], value : val})
+jud.registerDefendee(multi3, val, val2, 3, {from:acc[8], value : val})
+jud.registerDefendee(multi4, val, val2, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi5, val, val2, 3, {from:acc[1], value : val})
+jud.registerDefendee(multi6, val, val3, 3, {from:acc[3], value : val})
+jud.registerDefendee(multi7, val, val4, 3, {from:acc[7], value : val})
+jud.registerDefendee(multi8, val, val4, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi9, val, val5, 3, {from:acc[3], value : val})
+jud.registerDefendee(multi10, val, val6, 3, {from:acc[8], value : val})
+jud.registerDefendee(multi11, val, val7, 3, {from:acc[4], value : val})
+
+update defendee set imgdist = "http://52.141.57.42:3001/images/The.jpg" where name like "The%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/btson.jpg" where name like "Bts%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/Fro.jpg" where name like "Fro%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/Its.jpg" where name like "Its%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/face.png" where name like "외모%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/radioactive.jpeg" where name like "Ra%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/yourturn.jpeg" where name like "あなたの番です%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/stranger.jpg" where name like "Strange%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/believer.jpeg" where name like "Believer%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/zoo.jpg" where name like "Zootopia%";
+update defendee set imgdist = "http://52.141.57.42:3001/images/sam.jpg" where name like "삼시세끼 어촌편5%";
+update defendee set detailed = "Illegal link and download file" where name like "The%";
+update defendee set detailed = '불법적인 뮤직비디오와 노래 유통' where name like "Bts%";
+update defendee set detailed = "Unlicensed link about Frozen" where name like "Fro%";
+update defendee set detailed = "저작권 없는 불법 유통물 신고" where name like "Its%";
+update defendee set detailed = "미리보기회 불법 공유 및 저작물 위반" where name like "외모%";
+update defendee set detailed = "Report for Plagiarism" where name like "Ra%";
+update defendee set detailed = "不法映像申告" where name like "あなたの番です%";
+update defendee set detailed = "Unlicensed link about Stranger Things" where name like "Strang%";
+update defendee set detailed = "Unlicensed streaming or download page" where name like "Believer%";
+update defendee set detailed = "Illegal video about zootopia" where name like "Zootopia%";
+update defendee set detailed = "Tving에서 제공하지 않는 불법 유통 경로" where name like "삼시세끼 어촌편5%";

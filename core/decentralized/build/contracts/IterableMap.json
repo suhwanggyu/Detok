@@ -1,0 +1,115 @@
+{
+  "contractName": "IterableMap",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/OneDrive/project/CrowdReport/contracts/library/IterableMap.sol\":\"IterableMap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/OneDrive/project/CrowdReport/contracts/library/IterableMap.sol\":{\"keccak256\":\"0x16c5201154cebe841ad1f211aa3f16c7336ab0a061ecbf7d22789015d8f91dcf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://765b2f5000162139e5af2e3f35f779a3ba95a9de23940d5a0c15c2030d0044f8\",\"dweb:/ipfs/QmWYDwisPPbo62U3bd3GyGhiNaqw5radejr2Z4GHQaUjfU\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220ce193b01aa958bf07695613ce01c439b035d74ae77e4daaa5bc70dfec62921da64736f6c634300060a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220ce193b01aa958bf07695613ce01c439b035d74ae77e4daaa5bc70dfec62921da64736f6c634300060a0033",
+  "immutableReferences": {},
+  "sourceMap": "69:30:12:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "69:30:12:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\n\r\nlibrary IterableMap {\r\n    \r\n}",
+  "sourcePath": "C:\\Users\\tjdhk\\OneDrive\\project\\CrowdReport\\contracts\\library\\IterableMap.sol",
+  "ast": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/project/CrowdReport/contracts/library/IterableMap.sol",
+    "exportedSymbols": {
+      "IterableMap": [
+        1430
+      ]
+    },
+    "id": 1431,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1429,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1430,
+        "linearizedBaseContracts": [
+          1430
+        ],
+        "name": "IterableMap",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1431,
+        "src": "69:30:12"
+      }
+    ],
+    "src": "33:66:12"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/project/CrowdReport/contracts/library/IterableMap.sol",
+    "exportedSymbols": {
+      "IterableMap": [
+        1430
+      ]
+    },
+    "id": 1431,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1429,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1430,
+        "linearizedBaseContracts": [
+          1430
+        ],
+        "name": "IterableMap",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1431,
+        "src": "69:30:12"
+      }
+    ],
+    "src": "33:66:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.10+commit.00c0fcaf.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-10T03:41:59.491Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

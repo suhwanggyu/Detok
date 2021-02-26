@@ -1,0 +1,98 @@
+﻿
+#프로토타입 테스트
+0. 데이터 베이스의 튜플 모두 삭제
+1. truffle migrate 
+2. contract 파일 react에서 -> express로 복사
+3. api start하고 아래 스크립트 실행
+
+notdat = await ReportData.deployed()
+insdat = await InspectData.deployed()
+defdat = await DefendeeData.deployed()
+jud = await JudgeByMedia.deployed()
+not = await Notify.deployed()
+ins = await Inspect.deployed()
+acc = await web3.eth.getAccounts()
+
+copyrighter1= web3.utils.fromAscii("Netflix")
+jud.registerCopyrighter(copyrighter1, {from:acc[0]})
+copyrighter2 = web3.utils.fromAscii("Naver")
+jud.registerCopyrighter(copyrighter2, {from:acc[1]})
+copyrighter3 = web3.utils.fromAscii("Bts")
+jud.registerCopyrighter(copyrighter3, {from:acc[2]})
+copyrighter4 = web3.utils.fromAscii("Imagine dragons")
+jud.registerCopyrighter(copyrighter4, {from:acc[3]})
+copyrighter5 = web3.utils.fromAscii("Tving")
+jud.registerCopyrighter(copyrighter5, {from:acc[4]})
+copyrighter6 = web3.utils.fromAscii("Wavve")
+jud.registerCopyrighter(copyrighter6, {from:acc[5]})
+copyrighter7 = web3.utils.fromAscii("Watcha")
+jud.registerCopyrighter(copyrighter7, {from:acc[6]})
+copyrighter8 = web3.utils.fromAscii("Hulu")
+jud.registerCopyrighter(copyrighter8, {from:acc[7]})
+copyrighter9 = web3.utils.fromAscii("Disney")
+jud.registerCopyrighter(copyrighter9, {from:acc[8]})
+
+token = await DetokToken.deployed()
+val10 = "230000000000000000000000000"
+token.transfer(acc[6], val10, {from : acc[0]})
+
+multi1 = web3.utils.fromUtf8("루머의 루머의 루머")
+multi2 = web3.utils.fromUtf8("러브, 데스 + 로봇")
+multi3 = web3.utils.fromUtf8("오렌지 이즈 더 뉴 블랙")
+multi4 = web3.utils.fromUtf8("기묘한 이야기")
+multi5 = web3.utils.fromUtf8("워킹데드")
+multi6 = web3.utils.fromUtf8("브레이킹배드")
+multi7 = web3.utils.fromUtf8("왕좌의 게임")
+multi8 = web3.utils.fromUtf8("블랙미러")
+val = await web3.utils.toWei("1.0","ether")
+val2 = "100000000000000000000"
+val3 = "120000000000000000000"
+val4 = "130000000000000000000"
+val5 = "150000000000000000000"
+val6 = "200000000000000000000"
+val7 = "210000000000000000000"
+val8 = "180000000000000000000"
+val9 = "230000000000000000000"
+
+jud.registerDefendee(multi1, val, val2, 1, {from:acc[0], value : val})
+jud.registerDefendee(multi2, val, val3, 1, {from:acc[0], value : val})
+jud.registerDefendee(multi3, val, val4, 1, {from:acc[0], value : val})
+jud.registerDefendee(multi4, val, val5, 1, {from:acc[0], value : val})
+jud.registerDefendee(multi5, val, val6, 1, {from:acc[0], value : val})
+jud.registerDefendee(multi6, val, val7, 1, {from:acc[0], value : val})
+jud.registerDefendee(multi7, val, val8, 1, {from:acc[6], value : val})
+jud.registerDefendee(multi8, val, val9, 1, {from:acc[0], value : val})
+
+update defendee set imgdist = "http://localhost:3001/images/netflix/rumors.jpg" where name like "루머의%";
+update defendee set imgdist = "http://localhost:3001/images/netflix/lovedeath.jpg" where name like "러브%";
+update defendee set imgdist = "http://localhost:3001/images/netflix/orange.jpg" where name like "오렌지%";
+update defendee set imgdist = "http://localhost:3001/images/netflix/stranger.jpg" where name like "기묘한%";
+update defendee set imgdist = "http://localhost:3001/images/netflix/walking.jpg" where name like "워킹%";
+update defendee set imgdist = "http://localhost:3001/images/netflix/breaking.jpg" where name like "브레%";
+update defendee set imgdist = "http://localhost:3001/images/netflix/good.jpg" where name like "왕좌%";
+update defendee set imgdist = "http://localhost:3001/images/netflix/frozen.jpg" where name like "블랙%";
+
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "루머의%";
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "러브%";
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "오렌지%";
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "기묘한%";
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "워킹%";
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "브레%";
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "왕좌%";
+update defendee set detailed = "불법 유통 영상이 스트리밍 되는 url 신고" where name like "블랙%";
+
+update copyrighter set logo = 3 where name = "Watcha";
+update copyrighter set logo = 0 where name = "Disney";
+update copyrighter set logo = 1 where name = "Netflix";
+update copyrighter set logo = 5 where name = "Bts";
+update copyrighter set logo = 3 where name = "Tving";
+update copyrighter set logo = 5 where name = "Hulu";
+update copyrighter set logo = 4 where name = "Imagine Dragons";
+update copyrighter set logo = 2 where name = "Naver";
+update copyrighter set logo = 1 where name = "wavve";
+
+commit;
+
+
+4. item.type == 'function' && item.constant === false 를
+item.type == 'function' &&  (['payable', 'nonpayable'].includes(item.stateMutability) || item.constant === false 로 변경

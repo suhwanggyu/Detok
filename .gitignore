@@ -1,0 +1,11 @@
+/client/client_api/node_modules
+/client/client_react/node_modules
+/core/decentralized/node_modules
+/work/work_machine/analyzer/analyzer/__pycache__
+/work/work_machine/analyzer/database/__pycache__
+/work/work_machine/jumper/database/__pycache__
+/work/work_machine/jumper/evidence/__pycache__
+/work/work_machine/jumper/judge/__pycache__
+/work/work_machine/jumper/jumper/__pycache__
+/work/work_machine/jumper/request/__pycache__
+/work/work_machine/jumper/urlanalyze/__pycache__

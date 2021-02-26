@@ -1,0 +1,20 @@
+{
+  "name": "crowdreport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@drizzle/store": "^1.5.1",
+    "openzeppelin-solidity": "^3.1.0",
+    "solc": "^0.6.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

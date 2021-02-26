@@ -1,0 +1,86 @@
+.judgeBtm{
+    margin : 0.7rem;
+    width : 6rem;
+}
+
+.title{
+    margin-top:1rem;
+    margin-bottom: 6rem;
+    font-family: NotoSansKR-Bold;
+}
+
+.App {
+    margin:1rem;
+    width:67rem;
+}
+
+.cardTitle{
+    font-family:NotoSansKR-Medium;
+}
+
+.infoBox{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+}
+
+.domaininfo{
+    margin-bottom: 1rem;
+    margin-top:1rem;
+    font-size: 1.2rem;
+}
+.warningnothing{
+    margin-top:20rem;
+}
+
+div {
+    text-align: center;
+    /*font-family: NotoSans-Bold;*/
+    font-family:NotoSansKR-Bold;
+}
+.naviReport{
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    font-family: NotoSans-Black;
+}
+
+.registerContainer{
+    margin-top:20rem;
+    width:30rem;
+    display: inline-block;
+}
+
+@font-face{
+    font-family:"NotoSans-CondensedBold";
+    src:url("../NotoSans-hinted/NotoSans-CondensedBold.ttf");
+}
+
+@font-face{
+    font-family:"NotoSans-Bold";
+    src:url("../NotoSans-hinted/NotoSans-Bold.ttf");
+}
+
+@font-face{
+    font-family:"NotoSans-Medium";
+    src:url("../NotoSans-hinted/NotoSans-Medium.ttf");
+}
+@font-face{
+    font-family:"NotoSans-Black";
+    src:url("../NotoSans-hinted/NotoSans-Black.ttf");
+}
+
+@font-face{
+    font-family:"NotoSansKR-Black";
+    src:url("../NotoSans-hinted/Notosanskr/NotoSansKR-Black.otf");
+}
+
+@font-face{
+    font-family:"NotoSansKR-Bold";
+    src:url("../NotoSans-hinted/Notosanskr/NotoSansKR-Bold.otf");
+}
+
+
+@font-face{
+    font-family:"NotoSansKR-Medium";
+    src:url("../NotoSans-hinted/Notosanskr/NotoSansKR-Medium.otf");
+}

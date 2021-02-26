@@ -1,0 +1,43 @@
+.judgeBtm{
+    margin : 0.7rem;
+    width : 6rem;
+}
+
+.regdef {
+    width : 8rem;
+}
+
+.regform {
+    padding: 1rem;
+    margin-top: 10rem;
+    width : 30rem;
+    display: inline-block;
+}
+
+.registerCopyrighterContainer{
+    margin-top: 20rem;
+    width:40rem;
+    display: inline-block;
+}
+
+.App {
+    margin:1rem;
+    width:67rem;
+}
+
+.naviReport{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-family: NotoSans-Black;
+}
+.inputF{
+    margin : 0.3rem;
+}
+@font-face{
+    font-family:"NotoSans-Black";
+    src:url("../NotoSans-hinted/NotoSans-Black.ttf");
+}
+
+.warningnothing{
+    margin-top:20rem;
+}

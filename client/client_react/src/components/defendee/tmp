@@ -1,0 +1,51 @@
+ let web3 = this.props.web3;
+        let approve = new XMLHttpRequest();
+        const me = this;
+        approve.onreadystatechange = async function (e) {
+            if(approve.readyState !== XMLHttpRequest.DONE) return;
+            if(approve.status === 200){
+                let approveParse = JSON.parse(approve.response);
+                let approveAbi = approveParse.abi;
+                let DefenderTokencontract = new web3.eth.Contract(approveAbi, approveParse.networks[5777].address);
+                let reward = await web3.utils.toWei(me.state.reward, "ether");
+                let account = await web3.eth.getAccounts();
+
+                await DefenderTokencontract.methods.approve(
+                    '0xA31A670ee216D1E9Ce1ADD26E72d1f3fcfa5B9E1',
+                    reward
+                ).send({from : account[0]});
+
+                let xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = async function (e) {
+                    if(xhr.readyState !== XMLHttpRequest.DONE) return;
+                    if(xhr.status === 200) {
+                        let parsed = JSON.parse(xhr.response);
+                        let abi = parsed.abi;
+                        let contract = new web3.eth.Contract(abi, parsed.networks[5777].address);
+                        let name = await web3.utils.fromUtf8(me.state.name);
+                        let eth =  await web3.utils.toWei(me.state.eth, "ether");
+                        
+                        
+                        contract.methods.registerDefendee(
+                            name
+                            , eth
+                        , reward
+                        , me.state.inspectCount
+                            
+                        ).send( {from:account[0], value : web3.utils.toWei(me.state.eth, "ether"), gas: 6721975});
+                        console.log("aa");
+                    } else {
+                        console.log('Error!');
+                    }
+                }
+                xhr.open('POST',process.env.REACT_APP_API + '/contractjson');
+                xhr.setRequestHeader('Content-type', 'application/json');
+                xhr.send(JSON.stringify({'type':'JudgeByMedia'}));
+
+            } else {
+                console.log('Error!');
+            }
+        }
+        approve.open('POST',process.env.REACT_APP_API + '/contractjson');
+        approve.setRequestHeader('Content-type', 'application/json');
+        approve.send(JSON.stringify({'type':'DefenderToken'}));

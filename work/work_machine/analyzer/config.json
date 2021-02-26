@@ -1,0 +1,18 @@
+{
+    "test2":{
+        "seed":"http://blog.naver.com/PostView.nhn?blogId=ydfjqyn&logNo=220529168870",
+        "keywords":"왕좌의 게임"
+    },
+    "test":{
+        "seed":"https://www.sanook.com/",
+        "keywords":"เกมบัลลังก์"
+    },
+    "db":{
+        "user":"mize159",
+        "passwd":"ahdk2424159!",
+        "host":"localhost",
+        "db":"work",
+        "charset":"utf8"
+    },
+    "searchKeyword":["Soek","ፈልግ","بحث","axtarış","пошук","Търсене","Pretraživanje","cerca","circà","Vyhledávání","chwilio","Søg","Suche","Αναζήτηση","search","serĉu","buscar","otsing","bilatu","Search","جستجو","کردن","Hae","chercher","sykje","cuardaigh","lorg","Cari","खोज","procurar","શોધ","chọọ","zoeken","batla","bincika","leita","ຄົ້ນຫາ","milarian","ئىزدەش","זוכן","huli","ricerca","Søk","Sök","пошук","wa","खोज","לחפש","Paieška","căutare","kutafuta","تلاش","کو","بہتر","کریں","搜索","traži","探す","検索","kufufuza","Fufuzani","поиск","தேட","qidirmoq","搜索","rechèch","golèk","Meklēt","gushakisha","వెతకండి","Tìm","kiếm","keresés","ძიება","ڳولا","ҷустуҷӯи","որոնել","karohy","ค้นหา","ukucinga","khangela","іздеу","rapu","ସନ୍ଧାନ","සෙවීම","ស្វែងរក","пребарување","ਖੋਜ","Vyhľadávanie","gözleg","ಹುಡುಕಿ","Kannada","തിരയൽ","Iskanje","hanapin","검색","хайх","Szukaj","kutsvaga","căutare","Căutare","پلټنه","پلټنه","raadin","Raadi","gerr","शोध","procurar","kërko","arama","издөө","cari","Претрага","эзләү","Quaerere","tfittxija"]
+}

@@ -1,0 +1,132 @@
+﻿'0x3695508632602B2A4735FC5018CeFdC6E929eBd4' : token
+
+address("0x596FDCD7248A6bd92cba4Bc86fA96C1a2300B5Ea").call(bytes4(sha3("buyTokens()")),acc[1],{value : val })
+
+
+
+web3.eth.Contract(["constant": false,"inputs": [
+        {
+          "name": "beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "buyTokens",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"]).at("0x596FDCD7248A6bd92cba4Bc86fA96C1a2300B5Ea")
+
+a = await Test.deployed()
+app3.buyTokens(acc[2],{from:acc[2],value:val})
+
+app = await DefenderToken.deployed()
+app2 = await DefendContract.deployed()
+app3 = await DefenderTokenCrowdSale.deployed()
+1000000000
+acc = await web3.eth.getAccounts()
+val = await web3.utils.toWei("1.00", "ether")
+val2 = "1000000000000000000000"
+domain = web3.utils.fromAscii("https://variety720p.tistory.com/entry/%EB%8F%84%EC%A0%841000%EA%B3%A1-120930-720p-%ED%86%A0%EB%A0%8C%ED%8A%B8-215%ED%9A%8C");
+multi = web3.utils.fromAscii("ring of Thrown");
+app2.holdToken(app.address)
+bal = await web3.eth.getBalance(acc[0])
+1000000000000000000000
+99999999979999999999095308310
+20000000000000001000
+999999999799999999990953083
+bal = await web3.eth.getBalance(acc[0])
+app2.registerPlatform(multi)
+app2.registerDefendee(multi,val,val2,{value:val})
+app.approve(app2.address, val2)
+app2.deposit(val2)     
+
+
+app2.registerInspector({from:acc[1]})
+app2.registerInspector({from:acc[2]})
+app2.registerInspector({from:acc[5]})
+app2.notify(domain,multi,"problem!",{from:acc[1]})
+app2.inspect(domain,multi,true,{from:acc[1]})
+app2.inspect(domain,multi,true,{from:acc[2]})
+app2.inspect(domain,multi,true,{from:acc[3]})
+app2.judge(domain,multi,true)
+멀티미디어 등록자는 이더리움을 지불 : 신고자와 검증자에게 수수료 보상
+
+tmp = await app2.getBalance.call()
+temp = await tmp.toString()
+temp
+a = await web3.utils.fromWei(temp,"ether")
+
+
+
+
+not.holdToken(jud.address)
+jud.deposit(val2)   
+
+
+
+
+notdat = await ReportData.deployed()
+insdat = await InspectData.deployed()
+defdat = await DefendeeData.deployed()
+jud = await JudgeByMedia.deployed()
+not = await Notify.deployed()
+ins = await Inspect.deployed()
+acc = await web3.eth.getAccounts()
+not.holdDatabase(notdat.address, defdat.address)
+ins.holdDatabase(notdat.address, insdat.address, defdat.address)
+jud.holdDatabase(notdat.address, insdat.address, defdat.address)
+copyrighter = web3.utils.fromAscii("netflix")
+jud.registerCopyrighter(copyrighter, {from:acc[0]})
+acc = await web3.eth.getAccounts()
+multi1 = web3.utils.fromUtf8("The Game Of Thrones")
+multi2 = web3.utils.fromUtf8("BtsOn")
+multi3 = web3.utils.fromUtf8("Frozen")
+multi4 = web3.utils.fromUtf8("Its Okay to Not Be Okay")
+multi5 = web3.utils.fromUtf8("외모지상주의")
+multi6 = web3.utils.fromUtf8("Radioactive")
+multi7 = web3.utils.fromUtf8("あなたの番です")
+val = await web3.utils.toWei("1.10", "ether")
+val2 = "1000000000000000000000"
+val3 = "6700000000000000000000"
+val4 = "120000000000000000000"
+jud.registerDefendee(multi1, val, val2, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi2, val, val2, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi3, val, val2, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi4, val, val2, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi5, val, val2, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi6, val, val3, 3, {from:acc[0], value : val})
+jud.registerDefendee(multi7, val, val4, 3, {from:acc[0], value : val})
+domain = web3.utils.fromUtf8("https://www.gosBHZGyB2gQ4dUDCAw&uact=5");
+ip = web3.utils.fromUtf8("1270")
+
+app = await DetokToken.deployed() 
+app.approve(defdat.address, val2,{from:acc[2]})
+jud.holdToken(DefenderToken.address)
+not.notifyHandler(domain, multi5, ip,{from : acc[4]}) 
+ins.registerInspector({from : acc[1]})
+ins.registerInspector({from : acc[2]})
+ins.registerInspector({from : acc[3]})
+ins.registerInspector({from : acc[5]})
+
+ins.inspect(domain, multi2, false, {from : acc[1]})
+ins.inspect(domain, multi2, true, {from : acc[2]})
+ins.inspect(domain, multi2, false, {from : acc[3]})
+ins.inspect(domain, multi2, true, {from : acc[5]})
+
+9364
+9331
+domain = web3.utils.fromAscii("https:/f/www.slader.com/textbook/9780124077263-computer-organization-and-design-mips-edition-the-hardwaresoftware-interface-5th-edition/54/exercises/2/");
+app.approve(defdat.address, val2,{from:acc[0]})
+jud.judge(domain, multi2, true)
+
+
+defdat.defendees.call(multi) 
+
+ 'select domain, defendeeName, imgdist ' +
+        'from report, defendee '+
+        'where step = 2 and ' +
+        'name = defendeeName '+
+        'and reporterAddress != "' + req.body.myAddress +
+        +'" and id not in ' +
+        '(select reportid from inspect where inspectorAddress = "0x0dFbe33b347Eb48328fcD3665D11fC1039909f39") ' +
+        'order by rand() limit 1;'

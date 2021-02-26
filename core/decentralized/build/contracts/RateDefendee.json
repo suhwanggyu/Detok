@@ -1,0 +1,1394 @@
+{
+  "contractName": "RateDefendee",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_defendeeName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getRateDefendee",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_defendeeName\",\"type\":\"bytes32\"}],\"name\":\"getRateDefendee\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"RateDefendee\"},\"userdoc\":{\"methods\":{},\"notice\":\"Connector with rate database contract\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/rate/RateDefendee.sol\":\"RateDefendee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/library/ObjStruct.sol\":{\"keccak256\":\"0x289e2ae3987be2558753f20d826ce9d14cd7d80ad056f5514a0f41ac7db01d4a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://98e364ff3c03e664e363b32bd3d42926ffc96c93b89912c9f8ee2a841a8faad7\",\"dweb:/ipfs/QmaVTeLvBW53U3tDfJH7JKt99FeJLQYqzBa8t7NGg8emk6\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/library/Queue.sol\":{\"keccak256\":\"0xf110d5c4a9e8985deda5859889e4c26c379647f99e87d51e70d56794ae192cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fed5159562605459ec3e175e36acabd1e763d039aedb13eb786f22b957590f8b\",\"dweb:/ipfs/QmUqToqVqPms1r7ET4JiK1NFHezgYwGrrMvumB6DgpKgPf\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/library/Report.sol\":{\"keccak256\":\"0xe182cfeb0d98ca890ae704967829a1c6d05126f2adc6d4725c68844a73f584e5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://49cb926213ed4f3b0bbd1172d852938ba2e667dc801986eab8aff4772dff3f84\",\"dweb:/ipfs/QmSs9wxTjPFvaoYE2u3U2vtYifCvH9HSyRDkHz2FXW59JE\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/math/SafeMathuint.sol\":{\"keccak256\":\"0xcace7f18ab41bc74c966803aed127e35590f507b46aec836704606023a18ef70\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c01cfd8a2152c5540097c9b3ee5888ed34c5be0304fc13265bc9fac9b2644854\",\"dweb:/ipfs/QmNyqWoaXQtz6L56boJGEGMFoiPLNcp4DebNSBXW1qs9eG\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/rate/RateDefendee.sol\":{\"keccak256\":\"0xa640fff3681cd1d0825e50cafa58f1c9edc260e9fabddd409a6519af606bd7f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f6c613a1b9ab0dd71755c6dd598c6eaac7ee43116127ef7260aee02ae88a6a79\",\"dweb:/ipfs/QmViACiyFiQZ8CzyiCc3c2qcXDxPGGfeukH3QMx1NhHxhy\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/storeContract/DefendeeData.sol\":{\"keccak256\":\"0x20f6e510f8f9e3146482182d58a60a10f292b48a4f62ca86e32ba34b4bdf88ab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e9b92ca872a04909aeb57da88e16be3be6bb8e0db6bfdddf0d088e65dad52d4\",\"dweb:/ipfs/QmQNQE4HEBZiNpC3hfiK1RwrUzcjyVYH2vC17FWjKg5oSw\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/token/DetokToken.sol\":{\"keccak256\":\"0xaf6dcdbc60a73381584fad3a27dacc2918828b7433664c7d03c0bec20cad1330\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3669a93c601f54158c34ca822390f288793ac08e56b131eed3e263ae66ce94a9\",\"dweb:/ipfs/QmdQLwkd9hY18EeXkzrxYz5toTbRng2Sv89AxBa5KfWN5S\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/wallet/Wallet.sol\":{\"keccak256\":\"0xd9b6fae6964a61fe5c48ce57a3e130b54892caf09a524fcf1f81c36ac8bcc324\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dc881e1690ae964cc431ea96c3340cbb94e37e8b1a182e9194a1002d6d401113\",\"dweb:/ipfs/QmdwxSNMHjki1PdDykC1gJX8148sBG5XgDTnZsndZRnKb5\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/GSN/Context.sol\":{\"keccak256\":\"0xdb26cbf4d028490f49831a7865c2fe1b28db44b535ca8d343785a3b768aae183\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://840b14ce0315c47d49ba328f1f9fa7654ded1c9e1559e6c5e777a7b2dc28bf0a\",\"dweb:/ipfs/QmTLLabn4wcfGro9LEmUXUN2nwKqZSotXMvjDCLXEnLtZP\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/access/AccessControl.sol\":{\"keccak256\":\"0x92f7900d382761c7faefeaced81c6b4f1aae909ed0551803bfe8f27101956360\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://407c0864143968542e5cf5aa7556916d2cf292b201e3dadb65662e9a3aa24187\",\"dweb:/ipfs/QmSnXzYAUaGLGr7uofRbgQraTJvatbjQLBPhyYiMd18oUJ\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x9a9cf02622cd7a64261b10534fc3260449da25c98c9e96d1b4ae8110a20e5806\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2df142592d1dc267d9549049ee3317fa190d2f87eaa565f86ab05ec83f7ab8f5\",\"dweb:/ipfs/QmSkJtcfWo7c42KnL5hho6GFxK6HRNV91XABx1P7xDtfLV\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/presets/ERC20PresetMinterPauser.sol\":{\"keccak256\":\"0xe30213b0851987b0455057cdfb65660c05805cbb05b12c0d61b0ff7a99cc36cc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c61711ecc3ad53890dded63c27909a315ba3053c553be29acaa239bc6a7a0cf\",\"dweb:/ipfs/QmQjriBzSyAYQTm4NfWpnnoH8RhZrayyXm2zvpeHkxQnAk\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xf204d98eef08edacf5a02a2af1516ea4febdb6aba7a1ae5ac8deb6e568fd3dbb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c4dea62bffbd180772a6cfe7cb90e3a045c52d6b502bdb2fdff83193da42d8d0\",\"dweb:/ipfs/QmW8qGZ5nngajmv5Aamdrpkeuq7S5YCVaR7rtcqNekKHtK\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Burnable.sol\":{\"keccak256\":\"0x657b0d90be17331364211d74359df2a734fac864f6e88c80de7626fa33090ffb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://09cca25fefa2354a424d55a97930c76b11dc50697ba62c85d7affc27a37e830c\",\"dweb:/ipfs/QmPTQBYXxQDSNmMKqwe4WnM8E7NwnpLnkFLSRH8hZRvrVK\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Pausable.sol\":{\"keccak256\":\"0xbab4a97af2a6810a8ffc187205dfb331284949ea5b30caa5b9052828853bb149\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f53c98e31ed415c2a6f03d99809cd4f2f5fff92a13ee85022922a09df82ee459\",\"dweb:/ipfs/QmXiv4ysuQSRfoXqPpwA1QCreEnqfkrHDGyJTmifoni7dK\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5c26b39d26f7ed489e555d955dcd3e01872972e71fdd1528e93ec164e4f23385\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://efdc632af6960cf865dbc113665ea1f5b90eab75cc40ec062b2f6ae6da582017\",\"dweb:/ipfs/QmfAZFDuG62vxmAN9DnXApv7e7PMzPqi4RkqqZHLMSQiY5\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0xf3b30f8a49631420635a8c35daacfcaa338012755f18a76fdd118730256f9a27\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0d7de652204c2ee291a61aa984103dfc7ae4392d651fbbc44a0079caee7c69a3\",\"dweb:/ipfs/Qmcw1cQnq9eWDnrCBwU3TNyqLfTMUFg5YKpYUkELoMPuUE\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0xdfb4f812600ba4ce6738c35584ceb8c9433472583051b48ba5b1f66cb758a498\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df02dffe1c1de089d9b4f6192f0dcf464526f2230f420b3deec4645e0cdd2bff\",\"dweb:/ipfs/QmcqXGAU3KJqwrgUVoGJ2W8osomhSJ4R5kdsRpbuW3fELS\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0xb2a11b236f073662f5a196995863f51c11d006bf7c3de158b316dfa1506c4b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8651649cf0b9efa18c3b01c030276fa320d41adbdc286833417e7f36e357b2f3\",\"dweb:/ipfs/QmafhM2Nd1aP43QVB1eRRZaqRXQKswNfQcWi8U8xjrxCfN\"]},\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/node_modules/openzeppelin-solidity/contracts/utils/Pausable.sol\":{\"keccak256\":\"0x5d1b1dcbc0396f44c1c8d554857f71e3187503bf1e54062bf9ec6782e21f3a08\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9aa7fa580393aab7ca3d9f606f5ab7434d51e1c0f3632a593fca82c80ef8cc4c\",\"dweb:/ipfs/QmRy84N7QfkwBM2AeR7UB5G1PPHdRLi6s1iyzAwCzevcHe\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610110806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806303b6576a14602d575b600080fd5b604760048036036020811015604157600080fd5b5035605e565b6040805161ffff9092168252519081900360200190f35b6000805460408051631360636960e11b81526004810185905290516001600160a01b03909216916326c0c6d291602480820192602092909190829003018186803b15801560aa57600080fd5b505afa15801560bd573d6000803e3d6000fd5b505050506040513d602081101560d257600080fd5b50519291505056fea2646970667358221220780f25e1b92eea4a9d7370d1258ec9346408c490f9031ce27a61cec7ae06434064736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806303b6576a14602d575b600080fd5b604760048036036020811015604157600080fd5b5035605e565b6040805161ffff9092168252519081900360200190f35b6000805460408051631360636960e11b81526004810185905290516001600160a01b03909216916326c0c6d291602480820192602092909190829003018186803b15801560aa57600080fd5b505afa15801560bd573d6000803e3d6000fd5b505050506040513d602081101560d257600080fd5b50519291505056fea2646970667358221220780f25e1b92eea4a9d7370d1258ec9346408c490f9031ce27a61cec7ae06434064736f6c634300060a0033",
+  "immutableReferences": {},
+  "sourceMap": "255:565:15:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "255:565:15:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;360:149;;;;;;;;;;;;;;;;-1:-1:-1;360:149:15;;:::i;:::-;;;;;;;;;;;;;;;;;;;;429:6;455:15;;:46;;;-1:-1:-1;;;455:46:15;;;;;;;;;;-1:-1:-1;;;;;455:15:15;;;;:31;;:46;;;;;;;;;;;;;;;:15;:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;455:46:15;;360:149;-1:-1:-1;;360:149:15:o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\nimport '../math/SafeMathuint.sol';\r\nimport '../storeContract/DefendeeData.sol';\r\n/**\r\n *@title RateDefendee\r\n *@author  Wanggyu, Suh\r\n *@notice Connector with rate database contract\r\n */\r\ncontract RateDefendee {\r\n    using SafeMathuint for uint16;\r\n    DefendeeData defendeeStorage;\r\n   \r\n    function getRateDefendee(bytes32 _defendeeName) public view returns (uint16) {\r\n        return defendeeStorage.getDefendeeRate(_defendeeName);\r\n    }\r\n\r\n    function incrementRateDefendee(bytes32 _defendeeName) internal {\r\n        defendeeStorage.setDefendeeRate(_defendeeName, true, msg.sender);\r\n    }\r\n\r\n    function decreaseRateDefendee(bytes32 _defendeeName) internal {\r\n        defendeeStorage.setDefendeeRate(_defendeeName, false, msg.sender);\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\tjdhk\\OneDrive\\detok-alpha\\core\\decentralized\\contracts\\rate\\RateDefendee.sol",
+  "ast": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/rate/RateDefendee.sol",
+    "exportedSymbols": {
+      "RateDefendee": [
+        2132
+      ]
+    },
+    "id": 2133,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2080,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:15"
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/math/SafeMathuint.sol",
+        "file": "../math/SafeMathuint.sol",
+        "id": 2081,
+        "nodeType": "ImportDirective",
+        "scope": 2133,
+        "sourceUnit": 2079,
+        "src": "67:34:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/storeContract/DefendeeData.sol",
+        "file": "../storeContract/DefendeeData.sol",
+        "id": 2082,
+        "nodeType": "ImportDirective",
+        "scope": 2133,
+        "sourceUnit": 2872,
+        "src": "103:43:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 2083,
+          "nodeType": "StructuredDocumentation",
+          "src": "148:105:15",
+          "text": "@title RateDefendee\n@author  Wanggyu, Suh\n@notice Connector with rate database contract"
+        },
+        "fullyImplemented": true,
+        "id": 2132,
+        "linearizedBaseContracts": [
+          2132
+        ],
+        "name": "RateDefendee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 2086,
+            "libraryName": {
+              "contractScope": null,
+              "id": 2084,
+              "name": "SafeMathuint",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2078,
+              "src": "290:12:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMathuint_$2078",
+                "typeString": "library SafeMathuint"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "284:30:15",
+            "typeName": {
+              "id": 2085,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "307:6:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 2088,
+            "mutability": "mutable",
+            "name": "defendeeStorage",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2132,
+            "src": "320:28:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_DefendeeData_$2871",
+              "typeString": "contract DefendeeData"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 2087,
+              "name": "DefendeeData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2871,
+              "src": "320:12:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                "typeString": "contract DefendeeData"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 2100,
+              "nodeType": "Block",
+              "src": "437:72:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2097,
+                        "name": "_defendeeName",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2090,
+                        "src": "487:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2095,
+                        "name": "defendeeStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2088,
+                        "src": "455:15:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                          "typeString": "contract DefendeeData"
+                        }
+                      },
+                      "id": 2096,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getDefendeeRate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2428,
+                      "src": "455:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_uint16_$",
+                        "typeString": "function (bytes32) view external returns (uint16)"
+                      }
+                    },
+                    "id": 2098,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "455:46:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "functionReturnParameters": 2094,
+                  "id": 2099,
+                  "nodeType": "Return",
+                  "src": "448:53:15"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "03b6576a",
+            "id": 2101,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRateDefendee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2091,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2090,
+                  "mutability": "mutable",
+                  "name": "_defendeeName",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2101,
+                  "src": "385:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2089,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:23:15"
+            },
+            "returnParameters": {
+              "id": 2094,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2093,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2101,
+                  "src": "429:6:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 2092,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "429:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "428:8:15"
+            },
+            "scope": 2132,
+            "src": "360:149:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 2115,
+              "nodeType": "Block",
+              "src": "580:83:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2109,
+                        "name": "_defendeeName",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2103,
+                        "src": "623:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "74727565",
+                        "id": 2110,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "638:4:15",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "true"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 2111,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "644:3:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 2112,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "644:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2106,
+                        "name": "defendeeStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2088,
+                        "src": "591:15:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                          "typeString": "contract DefendeeData"
+                        }
+                      },
+                      "id": 2108,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setDefendeeRate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2823,
+                      "src": "591:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_bool_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,bool,address) external"
+                      }
+                    },
+                    "id": 2113,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "591:64:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2114,
+                  "nodeType": "ExpressionStatement",
+                  "src": "591:64:15"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2116,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "incrementRateDefendee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2104,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2103,
+                  "mutability": "mutable",
+                  "name": "_defendeeName",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2116,
+                  "src": "548:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2102,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "548:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "547:23:15"
+            },
+            "returnParameters": {
+              "id": 2105,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "580:0:15"
+            },
+            "scope": 2132,
+            "src": "517:146:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 2130,
+              "nodeType": "Block",
+              "src": "733:84:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2124,
+                        "name": "_defendeeName",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2118,
+                        "src": "776:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "66616c7365",
+                        "id": 2125,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "791:5:15",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 2126,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "798:3:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 2127,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "798:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2121,
+                        "name": "defendeeStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2088,
+                        "src": "744:15:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                          "typeString": "contract DefendeeData"
+                        }
+                      },
+                      "id": 2123,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setDefendeeRate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2823,
+                      "src": "744:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_bool_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,bool,address) external"
+                      }
+                    },
+                    "id": 2128,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "744:65:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2129,
+                  "nodeType": "ExpressionStatement",
+                  "src": "744:65:15"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2131,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decreaseRateDefendee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2118,
+                  "mutability": "mutable",
+                  "name": "_defendeeName",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2131,
+                  "src": "701:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2117,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "700:23:15"
+            },
+            "returnParameters": {
+              "id": 2120,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "733:0:15"
+            },
+            "scope": 2132,
+            "src": "671:146:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2133,
+        "src": "255:565:15"
+      }
+    ],
+    "src": "33:787:15"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/rate/RateDefendee.sol",
+    "exportedSymbols": {
+      "RateDefendee": [
+        2132
+      ]
+    },
+    "id": 2133,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2080,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:15"
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/math/SafeMathuint.sol",
+        "file": "../math/SafeMathuint.sol",
+        "id": 2081,
+        "nodeType": "ImportDirective",
+        "scope": 2133,
+        "sourceUnit": 2079,
+        "src": "67:34:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/storeContract/DefendeeData.sol",
+        "file": "../storeContract/DefendeeData.sol",
+        "id": 2082,
+        "nodeType": "ImportDirective",
+        "scope": 2133,
+        "sourceUnit": 2872,
+        "src": "103:43:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 2083,
+          "nodeType": "StructuredDocumentation",
+          "src": "148:105:15",
+          "text": "@title RateDefendee\n@author  Wanggyu, Suh\n@notice Connector with rate database contract"
+        },
+        "fullyImplemented": true,
+        "id": 2132,
+        "linearizedBaseContracts": [
+          2132
+        ],
+        "name": "RateDefendee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 2086,
+            "libraryName": {
+              "contractScope": null,
+              "id": 2084,
+              "name": "SafeMathuint",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2078,
+              "src": "290:12:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMathuint_$2078",
+                "typeString": "library SafeMathuint"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "284:30:15",
+            "typeName": {
+              "id": 2085,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "307:6:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 2088,
+            "mutability": "mutable",
+            "name": "defendeeStorage",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2132,
+            "src": "320:28:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_DefendeeData_$2871",
+              "typeString": "contract DefendeeData"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 2087,
+              "name": "DefendeeData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2871,
+              "src": "320:12:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                "typeString": "contract DefendeeData"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 2100,
+              "nodeType": "Block",
+              "src": "437:72:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2097,
+                        "name": "_defendeeName",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2090,
+                        "src": "487:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2095,
+                        "name": "defendeeStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2088,
+                        "src": "455:15:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                          "typeString": "contract DefendeeData"
+                        }
+                      },
+                      "id": 2096,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getDefendeeRate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2428,
+                      "src": "455:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_uint16_$",
+                        "typeString": "function (bytes32) view external returns (uint16)"
+                      }
+                    },
+                    "id": 2098,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "455:46:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "functionReturnParameters": 2094,
+                  "id": 2099,
+                  "nodeType": "Return",
+                  "src": "448:53:15"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "03b6576a",
+            "id": 2101,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRateDefendee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2091,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2090,
+                  "mutability": "mutable",
+                  "name": "_defendeeName",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2101,
+                  "src": "385:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2089,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:23:15"
+            },
+            "returnParameters": {
+              "id": 2094,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2093,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2101,
+                  "src": "429:6:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 2092,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "429:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "428:8:15"
+            },
+            "scope": 2132,
+            "src": "360:149:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 2115,
+              "nodeType": "Block",
+              "src": "580:83:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2109,
+                        "name": "_defendeeName",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2103,
+                        "src": "623:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "74727565",
+                        "id": 2110,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "638:4:15",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "true"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 2111,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "644:3:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 2112,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "644:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2106,
+                        "name": "defendeeStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2088,
+                        "src": "591:15:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                          "typeString": "contract DefendeeData"
+                        }
+                      },
+                      "id": 2108,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setDefendeeRate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2823,
+                      "src": "591:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_bool_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,bool,address) external"
+                      }
+                    },
+                    "id": 2113,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "591:64:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2114,
+                  "nodeType": "ExpressionStatement",
+                  "src": "591:64:15"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2116,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "incrementRateDefendee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2104,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2103,
+                  "mutability": "mutable",
+                  "name": "_defendeeName",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2116,
+                  "src": "548:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2102,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "548:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "547:23:15"
+            },
+            "returnParameters": {
+              "id": 2105,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "580:0:15"
+            },
+            "scope": 2132,
+            "src": "517:146:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 2130,
+              "nodeType": "Block",
+              "src": "733:84:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2124,
+                        "name": "_defendeeName",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2118,
+                        "src": "776:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "66616c7365",
+                        "id": 2125,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "791:5:15",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 2126,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "798:3:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 2127,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "798:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2121,
+                        "name": "defendeeStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2088,
+                        "src": "744:15:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_DefendeeData_$2871",
+                          "typeString": "contract DefendeeData"
+                        }
+                      },
+                      "id": 2123,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setDefendeeRate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2823,
+                      "src": "744:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_bool_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,bool,address) external"
+                      }
+                    },
+                    "id": 2128,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "744:65:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2129,
+                  "nodeType": "ExpressionStatement",
+                  "src": "744:65:15"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2131,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decreaseRateDefendee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2118,
+                  "mutability": "mutable",
+                  "name": "_defendeeName",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2131,
+                  "src": "701:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2117,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "700:23:15"
+            },
+            "returnParameters": {
+              "id": 2120,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "733:0:15"
+            },
+            "scope": 2132,
+            "src": "671:146:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2133,
+        "src": "255:565:15"
+      }
+    ],
+    "src": "33:787:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.10+commit.00c0fcaf.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-08-18T04:48:40.554Z",
+  "devdoc": {
+    "author": "Wanggyu, Suh",
+    "methods": {},
+    "title": "RateDefendee"
+  },
+  "userdoc": {
+    "methods": {},
+    "notice": "Connector with rate database contract"
+  }
+}

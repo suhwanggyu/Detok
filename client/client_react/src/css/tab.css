@@ -1,0 +1,53 @@
+.name{
+    margin-bottom: 5rem;
+    margin-top:3rem;
+    font-family: NotoSans-Black;
+}
+.nav-item{
+    /*font-family: NotoSans-SemiCondensedBold;*/
+    font-family:NotoSansKR-Bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.tabmenu{
+    min-height: 100rem;
+}
+
+.content{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+}
+
+@font-face{
+    font-family:"NotoSans-Black";
+    src:url("../NotoSans-hinted/NotoSans-Black.ttf");
+}
+
+@font-face{
+    font-family:"NotoSans-CondensedBold";
+    src:url("../NotoSans-hinted/NotoSans-CondensedBold.ttf");
+}
+
+
+@font-face{
+    font-family:"NotoSans-SemiCondensedBold";
+    src:url("../NotoSans-hinted/NotoSans-SemiCondensedBold.ttf");
+}
+
+@font-face{
+    font-family:"NotoSansKR-Black";
+    src:url("../NotoSans-hinted/Notosanskr/NotoSansKR-Black.otf");
+}
+
+@font-face{
+    font-family:"NotoSansKR-Bold";
+    src:url("../NotoSans-hinted/Notosanskr/NotoSansKR-Bold.otf");
+}
+
+
+@font-face{
+    font-family:"NotoSansKR-Medium";
+    src:url("../NotoSans-hinted/Notosanskr/NotoSansKR-Medium.otf");
+}

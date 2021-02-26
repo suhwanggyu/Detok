@@ -1,0 +1,128 @@
+{
+  "contractName": "Vote",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"Vote\"},\"userdoc\":{\"methods\":{},\"notice\":\"Detok always consider about DAO. If DAO is more trustable service about illegal work detecting system, We will make vote system.\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/decision/Vote.sol\":\"Vote\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/decision/Vote.sol\":{\"keccak256\":\"0x1a71d669ce4b7a948a3fb512823259e9621016907cf4fdb864930c7e4b5404ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4d9ff218cb470043315089dd3acbf4582ef5d444088b6ef9d6b72ccdac497085\",\"dweb:/ipfs/QmWx8LDRqfy7djESFtpkpvEgzMErgZPiCvUjW9oDshyeUq\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220fd8ec26a37c52ab4f2b9d2203b8433061d79f3cf182af95cabfa6817d3aeba1a64736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220fd8ec26a37c52ab4f2b9d2203b8433061d79f3cf182af95cabfa6817d3aeba1a64736f6c634300060a0033",
+  "immutableReferences": {},
+  "sourceMap": "264:19:6:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "264:19:6:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\n/**\r\n *@title Vote\r\n *@author Wanggyu, Suh\r\n *@notice Detok always consider about DAO.\r\n * If DAO is more trustable service about illegal work detecting system, We will make\r\n * vote system.\r\n */\r\ncontract Vote{\r\n\r\n}",
+  "sourcePath": "C:\\Users\\tjdhk\\OneDrive\\detok-alpha\\core\\decentralized\\contracts\\decision\\Vote.sol",
+  "ast": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/decision/Vote.sol",
+    "exportedSymbols": {
+      "Vote": [
+        1426
+      ]
+    },
+    "id": 1427,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1424,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 1425,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:195:6",
+          "text": "@title Vote\n@author Wanggyu, Suh\n@notice Detok always consider about DAO.\n If DAO is more trustable service about illegal work detecting system, We will make\n vote system."
+        },
+        "fullyImplemented": true,
+        "id": 1426,
+        "linearizedBaseContracts": [
+          1426
+        ],
+        "name": "Vote",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1427,
+        "src": "264:19:6"
+      }
+    ],
+    "src": "33:250:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/detok-alpha/core/decentralized/contracts/decision/Vote.sol",
+    "exportedSymbols": {
+      "Vote": [
+        1426
+      ]
+    },
+    "id": 1427,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1424,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 1425,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:195:6",
+          "text": "@title Vote\n@author Wanggyu, Suh\n@notice Detok always consider about DAO.\n If DAO is more trustable service about illegal work detecting system, We will make\n vote system."
+        },
+        "fullyImplemented": true,
+        "id": 1426,
+        "linearizedBaseContracts": [
+          1426
+        ],
+        "name": "Vote",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1427,
+        "src": "264:19:6"
+      }
+    ],
+    "src": "33:250:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.10+commit.00c0fcaf.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-08-18T04:48:40.519Z",
+  "devdoc": {
+    "author": "Wanggyu, Suh",
+    "methods": {},
+    "title": "Vote"
+  },
+  "userdoc": {
+    "methods": {},
+    "notice": "Detok always consider about DAO. If DAO is more trustable service about illegal work detecting system, We will make vote system."
+  }
+}

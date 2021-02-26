@@ -1,0 +1,28 @@
+div {
+    font-family: NotoSans-Bold;
+}
+
+.ReportBtn {
+    margin: 1rem auto auto;
+    width : 10rem;
+}
+
+.reportSearchContainer{
+    width : 50%;
+    margin: 1rem auto auto;
+}
+
+.title{
+    margin-bottom: 5rem;
+    font-family: NotoSans-Bold;
+}
+@font-face{
+    font-family:"NotoSans-CondensedBold";
+    src:url("../NotoSans-hinted/NotoSans-CondensedBold.ttf");
+}
+
+@font-face{
+    font-family:"NotoSans-Bold";
+    src:url("../NotoSans-hinted/NotoSans-Bold.ttf");
+}
+

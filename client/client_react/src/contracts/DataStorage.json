@@ -1,0 +1,203 @@
+{
+  "contractName": "DataStorage",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/OneDrive/project/defender/contracts/storeContract/DataStorage1.sol\":\"DataStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/OneDrive/project/defender/contracts/library/ObjStruct.sol\":{\"keccak256\":\"0x0c1182f9fab6b559c29f897f8c458a6f3e210f7073ae0c0680d58b6eea238b15\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c19c49eb7e13108a3b5fb1c597b11606e128595bdf397f9326913e1d18b077a7\",\"dweb:/ipfs/QmZ3dYP5vgnJ6NKEZpshKdeQuuY11cugBRSvekamjbWY1z\"]},\"/C/Users/tjdhk/OneDrive/project/defender/contracts/library/Queue.sol\":{\"keccak256\":\"0x2b0350d66d49ff17d9b9e906e8ed7734bbe79972deb595e2c4dc0e3641d9aee8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6cf2531b7c837f539a7989660b8bffa22a1787d1176b85f05b0846204ed3b928\",\"dweb:/ipfs/QmRkvHN3NcjiRcG8S89dsnw58N9fbyLpx5adCfvBFYJ4mR\"]},\"/C/Users/tjdhk/OneDrive/project/defender/contracts/library/Report.sol\":{\"keccak256\":\"0x0df840191c7c560e910db36da02f69f0273834a02448419f92022c7eb0d61799\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e873fefbbf9c9cd87f17415c6c86d1b1cc6890813d322bbc56ed5f02302f1d8d\",\"dweb:/ipfs/QmeAdW6Eabrhmns3ahwxwGs9iqd1DW5NAVHKmB8NRsC3S5\"]},\"/C/Users/tjdhk/OneDrive/project/defender/contracts/storeContract/DataStorage1.sol\":{\"keccak256\":\"0x3f2b015b57729da23fc0a94ec34442a4a3979268afe095dfeafdd999f199ccd2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ee96a98b53405ff87924548fef933968292f3610d423b7e084ae0aa48f57704c\",\"dweb:/ipfs/QmTxW9RuMCuCqCasYYKNUvxvQe2xqWBdUZqo7FmkZt2YR5\"]},\"/C/Users/tjdhk/OneDrive/project/defender/contracts/token/DefenderToken.sol\":{\"keccak256\":\"0xef2cbcdd52beb175f15880730ef131cb130c86a8b21e5703a3ca8bbe9df4b2a8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d98ccc843b2ebab4da7a38a2a08e9f99dfa5b3f7757fb3a384a26291bcf282d5\",\"dweb:/ipfs/QmNVjLNaDpeaQifR8si4Nj18Xrz5iqaFx3WXv7B79xHVUQ\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/GSN/Context.sol\":{\"keccak256\":\"0xdb26cbf4d028490f49831a7865c2fe1b28db44b535ca8d343785a3b768aae183\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://840b14ce0315c47d49ba328f1f9fa7654ded1c9e1559e6c5e777a7b2dc28bf0a\",\"dweb:/ipfs/QmTLLabn4wcfGro9LEmUXUN2nwKqZSotXMvjDCLXEnLtZP\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/access/AccessControl.sol\":{\"keccak256\":\"0x92f7900d382761c7faefeaced81c6b4f1aae909ed0551803bfe8f27101956360\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://407c0864143968542e5cf5aa7556916d2cf292b201e3dadb65662e9a3aa24187\",\"dweb:/ipfs/QmSnXzYAUaGLGr7uofRbgQraTJvatbjQLBPhyYiMd18oUJ\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x9a9cf02622cd7a64261b10534fc3260449da25c98c9e96d1b4ae8110a20e5806\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2df142592d1dc267d9549049ee3317fa190d2f87eaa565f86ab05ec83f7ab8f5\",\"dweb:/ipfs/QmSkJtcfWo7c42KnL5hho6GFxK6HRNV91XABx1P7xDtfLV\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/presets/ERC20PresetMinterPauser.sol\":{\"keccak256\":\"0xe30213b0851987b0455057cdfb65660c05805cbb05b12c0d61b0ff7a99cc36cc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c61711ecc3ad53890dded63c27909a315ba3053c553be29acaa239bc6a7a0cf\",\"dweb:/ipfs/QmQjriBzSyAYQTm4NfWpnnoH8RhZrayyXm2zvpeHkxQnAk\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xf204d98eef08edacf5a02a2af1516ea4febdb6aba7a1ae5ac8deb6e568fd3dbb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c4dea62bffbd180772a6cfe7cb90e3a045c52d6b502bdb2fdff83193da42d8d0\",\"dweb:/ipfs/QmW8qGZ5nngajmv5Aamdrpkeuq7S5YCVaR7rtcqNekKHtK\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Burnable.sol\":{\"keccak256\":\"0x657b0d90be17331364211d74359df2a734fac864f6e88c80de7626fa33090ffb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://09cca25fefa2354a424d55a97930c76b11dc50697ba62c85d7affc27a37e830c\",\"dweb:/ipfs/QmPTQBYXxQDSNmMKqwe4WnM8E7NwnpLnkFLSRH8hZRvrVK\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Pausable.sol\":{\"keccak256\":\"0xbab4a97af2a6810a8ffc187205dfb331284949ea5b30caa5b9052828853bb149\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f53c98e31ed415c2a6f03d99809cd4f2f5fff92a13ee85022922a09df82ee459\",\"dweb:/ipfs/QmXiv4ysuQSRfoXqPpwA1QCreEnqfkrHDGyJTmifoni7dK\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x38001449fd2ff698d0b0112f9aafc727bdf89124bcef59d3081a5950e28161e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f922ecb85c3a8f1fa1578f988d4e6a3d32265630754ba80b2740f15b32c26f82\",\"dweb:/ipfs/QmZG1yh9L7CAswtgrKipjnTEGBdfKqZbWR9hCCp2Hysgqj\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0xdfb4f812600ba4ce6738c35584ceb8c9433472583051b48ba5b1f66cb758a498\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df02dffe1c1de089d9b4f6192f0dcf464526f2230f420b3deec4645e0cdd2bff\",\"dweb:/ipfs/QmcqXGAU3KJqwrgUVoGJ2W8osomhSJ4R5kdsRpbuW3fELS\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0xb2a11b236f073662f5a196995863f51c11d006bf7c3de158b316dfa1506c4b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8651649cf0b9efa18c3b01c030276fa320d41adbdc286833417e7f36e357b2f3\",\"dweb:/ipfs/QmafhM2Nd1aP43QVB1eRRZaqRXQKswNfQcWi8U8xjrxCfN\"]},\"/C/Users/tjdhk/OneDrive/project/defender/node_modules/openzeppelin-solidity/contracts/utils/Pausable.sol\":{\"keccak256\":\"0x5d1b1dcbc0396f44c1c8d554857f71e3187503bf1e54062bf9ec6782e21f3a08\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9aa7fa580393aab7ca3d9f606f5ab7434d51e1c0f3632a593fca82c80ef8cc4c\",\"dweb:/ipfs/QmRy84N7QfkwBM2AeR7UB5G1PPHdRLi6s1iyzAwCzevcHe\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122000c3ecc950f9248b85e6132b5050078bf43971aeccb7e808503d3d760fc3742564736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122000c3ecc950f9248b85e6132b5050078bf43971aeccb7e808503d3d760fc3742564736f6c634300060a0033",
+  "immutableReferences": {},
+  "sourceMap": "208:30:22:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "208:30:22:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\nimport '../library/Report.sol';\r\nimport '../token/DefenderToken.sol';\r\nimport '../library/Queue.sol';\r\nimport '../library/ObjStruct.sol';\r\n\r\ncontract DataStorage{\r\n    \r\n}",
+  "sourcePath": "C:\\Users\\tjdhk\\OneDrive\\project\\defender\\contracts\\storeContract\\DataStorage1.sol",
+  "ast": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/storeContract/DataStorage1.sol",
+    "exportedSymbols": {
+      "DataStorage": [
+        2204
+      ]
+    },
+    "id": 2205,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2199,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:22"
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/library/Report.sol",
+        "file": "../library/Report.sol",
+        "id": 2200,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 1895,
+        "src": "67:31:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/token/DefenderToken.sol",
+        "file": "../token/DefenderToken.sol",
+        "id": 2201,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 3583,
+        "src": "100:36:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/library/Queue.sol",
+        "file": "../library/Queue.sol",
+        "id": 2202,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 1726,
+        "src": "138:30:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/library/ObjStruct.sol",
+        "file": "../library/ObjStruct.sol",
+        "id": 2203,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 1610,
+        "src": "170:34:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2204,
+        "linearizedBaseContracts": [
+          2204
+        ],
+        "name": "DataStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 2205,
+        "src": "208:30:22"
+      }
+    ],
+    "src": "33:205:22"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/storeContract/DataStorage1.sol",
+    "exportedSymbols": {
+      "DataStorage": [
+        2204
+      ]
+    },
+    "id": 2205,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2199,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:22"
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/library/Report.sol",
+        "file": "../library/Report.sol",
+        "id": 2200,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 1895,
+        "src": "67:31:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/token/DefenderToken.sol",
+        "file": "../token/DefenderToken.sol",
+        "id": 2201,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 3583,
+        "src": "100:36:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/library/Queue.sol",
+        "file": "../library/Queue.sol",
+        "id": 2202,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 1726,
+        "src": "138:30:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/tjdhk/OneDrive/project/defender/contracts/library/ObjStruct.sol",
+        "file": "../library/ObjStruct.sol",
+        "id": 2203,
+        "nodeType": "ImportDirective",
+        "scope": 2205,
+        "sourceUnit": 1610,
+        "src": "170:34:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2204,
+        "linearizedBaseContracts": [
+          2204
+        ],
+        "name": "DataStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 2205,
+        "src": "208:30:22"
+      }
+    ],
+    "src": "33:205:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.10+commit.00c0fcaf.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-17T10:32:27.233Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

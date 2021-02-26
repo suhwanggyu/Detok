@@ -1,0 +1,17 @@
+{
+    "test":{
+        "seed":"http://blog.naver.com/PostView.nhn?blogId=ydfjqyn&logNo=220529168870",
+        "keywords":["왕좌의 게임"]
+    },
+    "test2":{
+        "seed":"https://m.blog.naver.com/PostView.nhn?blogId=heejji86&logNo=220900350944&proxyReferer=https:%2F%2Fwww.google.com%2F",
+        "keywords":["왕좌의 게임"]
+    },
+    "db":{
+        "user":"mize159",
+        "passwd":"ahdk2424159!",
+        "host":"localhost",
+        "db":"work",
+        "charset":"utf8"
+    }
+}
