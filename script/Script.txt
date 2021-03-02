@@ -1,4 +1,15 @@
-﻿copyrighter1= web3.utils.fromAscii("Netflix")
+﻿
+notdat = await ReportData.deployed()
+insdat = await InspectData.deployed()
+defdat = await DefendeeData.deployed()
+jud = await JudgeByMedia.deployed()
+not = await Notify.deployed()
+ins = await Inspect.deployed()
+acc = await web3.eth.getAccounts()
+
+
+
+copyrighter1= web3.utils.fromAscii("Netflix")
 jud.registerCopyrighter(copyrighter1, {from:acc[0]})
 copyrighter2 = web3.utils.fromAscii("Naver")
 jud.registerCopyrighter(copyrighter2, {from:acc[1]})

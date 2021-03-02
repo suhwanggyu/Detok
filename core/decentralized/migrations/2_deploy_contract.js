@@ -1,5 +1,4 @@
 const DetokToken = artifacts.require("./token/DetokToken");
-const DetokCrowdSale = artifacts.require("./tokenSale/DetokCrowdSale");
 const Notify = artifacts.require("./Notify");
 const Inspect = artifacts.require("./Inspect");
 const JudgeByMedia = artifacts.require("./JudgeByMedia");
@@ -21,7 +20,6 @@ module.exports = async function(deployer) {
   let notdat = await deployer.deploy(ReportData, not.address, ins.address, def.address);
   let insdat = await deployer.deploy(InspectData, not.address, ins.address, def.address);
   let defdat = await deployer.deploy(DefendeeData, not.address, ins.address, def.address, tok.address);
-  await deployer.deploy(DetokCrowdSale, 1,def.address, tok.address, Math.round((new Date().getTime() / 1000))+5,Math.round((new Date().getTime() / 1000))+10000,web3.utils.toWei("1.50","ether"));
   
   not.holdDatabase(notdat.address, defdat.address);
   ins.holdDatabase(notdat.address, insdat.address, defdat.address);

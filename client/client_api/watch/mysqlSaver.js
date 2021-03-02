@@ -1,6 +1,5 @@
 let Saver = require('./saver');
-
-
+require('dotenv').config();
 
 class MysqlSaver extends Saver {
     constructor(_connect) {

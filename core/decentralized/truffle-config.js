@@ -18,6 +18,8 @@
  *
  */
 const path = require("path");
+const { projectId, mnemonic } = require('./secrets.json');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
@@ -42,9 +44,16 @@ module.exports = {
       network_id: "*", // Match any network id
     },
     ganache: {
-      host: "10.0.0.4",
+      host: "0.0.0.0",
       port: 8545,
       network_id: "*", // Match any network id
+    },
+    ropsten: {
+      provider: () => new HDWalletProvider(mnemonic, `wss://ropsten.infura.io/ws/v3/${projectId}`),
+      network_id: 3,       // Ropsten's id
+      confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 50000,  // # of blocks before a deployment times out  (minimum/default: 50)
+      skipDryRun: true 
     }
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.

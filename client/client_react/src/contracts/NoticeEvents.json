@@ -58,16 +58,16 @@
       "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"Reporting\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"addingBlackList\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"JudgeEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about Report process\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/OneDrive/\\uc6d0\\uaca9/gitConnectProject/tmpdetok/core/decentralized/contracts/events/NoticeEvents.sol\":\"NoticeEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/OneDrive/\\uc6d0\\uaca9/gitConnectProject/tmpdetok/core/decentralized/contracts/events/NoticeEvents.sol\":{\"keccak256\":\"0xd71d7a76028757266f6fd7d7ec9f04b6fb9edae6576f2e6a6a941ff821e3732b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://85ea9b7eeef4cf9e060de7a27b0b5bab170f373250cce6d032fc675007d9a07e\",\"dweb:/ipfs/QmUPiQwoUUUYwctxWr3cw7Z5RMhUsrszhwFUcC6Nxnmuwh\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122007a4d9bc004e4c0e0c3c62fb04472061986feae0d1b9307b4d80de04ec51d22564736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052600080fdfea264697066735822122007a4d9bc004e4c0e0c3c62fb04472061986feae0d1b9307b4d80de04ec51d22564736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"Reporting\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"addingBlackList\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"JudgeEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about Report process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol\":\"NoticeEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol\":{\"keccak256\":\"0x0d8085223d00cc93a67bd3b21485c74d4d53a584c739d7f7ce7cae7ae142b151\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa4b0b1582dded99554f34d08416691d39aef7ce729bc5eb5897921342842ebc\",\"dweb:/ipfs/QmPCy24vFMTyKQuQm3hWwdKSson4viJ7ei69W6wWbxbCzq\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220824f5d51cd220939680dd42b181115dca6f4e3305aa8317419743212773ef55a64736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220824f5d51cd220939680dd42b181115dca6f4e3305aa8317419743212773ef55a64736f6c634300060a0033",
   "immutableReferences": {},
-  "sourceMap": "161:287:9:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "161:287:9:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\n/**\r\n *@title JudgeEvents\r\n *@author Wanggyu, Suh\r\n *@notice Event about Report process\r\n */\r\ncontract NoticeEvents {\r\n    event Reporting(\r\n        bytes domain,\r\n        bytes32 defendeeName,\r\n        bytes32 ip,\r\n        address reporterAddress\r\n    );\r\n\r\n    event addingBlackList(\r\n        bytes32 defendeeName,\r\n        bytes32 ip,\r\n        address reporterAddress\r\n    );\r\n}",
-  "sourcePath": "C:\\Users\\tjdhk\\OneDrive\\원격\\gitConnectProject\\tmpdetok\\core\\decentralized\\contracts\\events\\NoticeEvents.sol",
+  "sourceMap": "154:278:9:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "154:278:9:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n/**\n *@title JudgeEvents\n *@author Wanggyu, Suh\n *@notice Event about Report process\n */\ncontract NoticeEvents {\n    event Reporting(\n        bytes domain,\n        bytes32 defendeeName,\n        bytes32 ip,\n        address reporterAddress\n    );\n    \n    event addingBlackList(\n        bytes32 defendeeName,\n        bytes32 ip,\n        address reporterAddress\n    );\n}",
+  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
   "ast": {
-    "absolutePath": "/C/Users/tjdhk/OneDrive/원격/gitConnectProject/tmpdetok/core/decentralized/contracts/events/NoticeEvents.sol",
+    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
     "exportedSymbols": {
       "NoticeEvents": [
         1498
@@ -89,7 +89,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:32:9"
+        "src": "32:32:9"
       },
       {
         "abstract": false,
@@ -99,7 +99,7 @@
         "documentation": {
           "id": 1479,
           "nodeType": "StructuredDocumentation",
-          "src": "67:92:9",
+          "src": "65:88:9",
           "text": "@title JudgeEvents\n@author Wanggyu, Suh\n@notice Event about Report process"
         },
         "fullyImplemented": true,
@@ -129,7 +129,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1489,
-                  "src": "216:12:9",
+                  "src": "207:12:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -140,7 +140,7 @@
                     "id": 1480,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "216:5:9",
+                    "src": "207:5:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -158,7 +158,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1489,
-                  "src": "239:20:9",
+                  "src": "229:20:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -169,7 +169,7 @@
                     "id": 1482,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "239:7:9",
+                    "src": "229:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -187,7 +187,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1489,
-                  "src": "270:10:9",
+                  "src": "259:10:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -198,7 +198,7 @@
                     "id": 1484,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "270:7:9",
+                    "src": "259:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -216,7 +216,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1489,
-                  "src": "291:23:9",
+                  "src": "279:23:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -227,7 +227,7 @@
                     "id": 1486,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "291:7:9",
+                    "src": "279:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -238,9 +238,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "205:116:9"
+              "src": "197:111:9"
             },
-            "src": "190:132:9"
+            "src": "182:127:9"
           },
           {
             "anonymous": false,
@@ -261,7 +261,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1497,
-                  "src": "362:20:9",
+                  "src": "350:20:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -272,7 +272,7 @@
                     "id": 1490,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "362:7:9",
+                    "src": "350:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -290,7 +290,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1497,
-                  "src": "393:10:9",
+                  "src": "380:10:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -301,7 +301,7 @@
                     "id": 1492,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "393:7:9",
+                    "src": "380:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -319,7 +319,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1497,
-                  "src": "414:23:9",
+                  "src": "400:23:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -330,7 +330,7 @@
                     "id": 1494,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "414:7:9",
+                    "src": "400:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -341,310 +341,330 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "351:93:9"
+              "src": "340:89:9"
             },
-            "src": "330:115:9"
+            "src": "319:111:9"
           }
         ],
         "scope": 1499,
-        "src": "161:287:9"
+        "src": "154:278:9"
       }
     ],
-    "src": "33:415:9"
+    "src": "32:400:9"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/tjdhk/OneDrive/원격/gitConnectProject/tmpdetok/core/decentralized/contracts/events/NoticeEvents.sol",
-    "exportedSymbols": {
-      "NoticeEvents": [
-        1498
-      ]
+    "attributes": {
+      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
+      "exportedSymbols": {
+        "NoticeEvents": [
+          1498
+        ]
+      },
+      "license": "MIT"
     },
-    "id": 1499,
-    "license": "MIT",
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".21",
+            "<",
+            "0.7",
+            ".0"
+          ]
+        },
         "id": 1478,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "33:32:9"
+        "name": "PragmaDirective",
+        "src": "32:32:9"
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "documentation": {
-          "id": 1479,
-          "nodeType": "StructuredDocumentation",
-          "src": "67:92:9",
-          "text": "@title JudgeEvents\n@author Wanggyu, Suh\n@notice Event about Report process"
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1498
+          ],
+          "name": "NoticeEvents",
+          "scope": 1499
         },
-        "fullyImplemented": true,
-        "id": 1498,
-        "linearizedBaseContracts": [
-          1498
-        ],
-        "name": "NoticeEvents",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "children": [
           {
-            "anonymous": false,
-            "documentation": null,
-            "id": 1489,
-            "name": "Reporting",
-            "nodeType": "EventDefinition",
-            "parameters": {
-              "id": 1488,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1481,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "domain",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1489,
-                  "src": "216:12:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes_memory_ptr",
-                    "typeString": "bytes"
-                  },
-                  "typeName": {
-                    "id": 1480,
-                    "name": "bytes",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "216:5:9",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes_storage_ptr",
-                      "typeString": "bytes"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1483,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "defendeeName",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1489,
-                  "src": "239:20:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 1482,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "239:7:9",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1485,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "ip",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1489,
-                  "src": "270:10:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 1484,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "270:7:9",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1487,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "reporterAddress",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1489,
-                  "src": "291:23:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 1486,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "291:7:9",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "205:116:9"
+            "attributes": {
+              "text": "@title JudgeEvents\n@author Wanggyu, Suh\n@notice Event about Report process"
             },
-            "src": "190:132:9"
+            "id": 1479,
+            "name": "StructuredDocumentation",
+            "src": "65:88:9"
           },
           {
-            "anonymous": false,
-            "documentation": null,
-            "id": 1497,
-            "name": "addingBlackList",
-            "nodeType": "EventDefinition",
-            "parameters": {
-              "id": 1496,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1491,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "defendeeName",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1497,
-                  "src": "362:20:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 1490,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "362:7:9",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1493,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "ip",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1497,
-                  "src": "393:10:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 1492,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "393:7:9",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1495,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "reporterAddress",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1497,
-                  "src": "414:23:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 1494,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "414:7:9",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "351:93:9"
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "Reporting"
             },
-            "src": "330:115:9"
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "domain",
+                      "overrides": null,
+                      "scope": 1489,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 1480,
+                        "name": "ElementaryTypeName",
+                        "src": "207:5:9"
+                      }
+                    ],
+                    "id": 1481,
+                    "name": "VariableDeclaration",
+                    "src": "207:12:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "defendeeName",
+                      "overrides": null,
+                      "scope": 1489,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 1482,
+                        "name": "ElementaryTypeName",
+                        "src": "229:7:9"
+                      }
+                    ],
+                    "id": 1483,
+                    "name": "VariableDeclaration",
+                    "src": "229:20:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "ip",
+                      "overrides": null,
+                      "scope": 1489,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 1484,
+                        "name": "ElementaryTypeName",
+                        "src": "259:7:9"
+                      }
+                    ],
+                    "id": 1485,
+                    "name": "VariableDeclaration",
+                    "src": "259:10:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "reporterAddress",
+                      "overrides": null,
+                      "scope": 1489,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1486,
+                        "name": "ElementaryTypeName",
+                        "src": "279:7:9"
+                      }
+                    ],
+                    "id": 1487,
+                    "name": "VariableDeclaration",
+                    "src": "279:23:9"
+                  }
+                ],
+                "id": 1488,
+                "name": "ParameterList",
+                "src": "197:111:9"
+              }
+            ],
+            "id": 1489,
+            "name": "EventDefinition",
+            "src": "182:127:9"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "addingBlackList"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "defendeeName",
+                      "overrides": null,
+                      "scope": 1497,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 1490,
+                        "name": "ElementaryTypeName",
+                        "src": "350:7:9"
+                      }
+                    ],
+                    "id": 1491,
+                    "name": "VariableDeclaration",
+                    "src": "350:20:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "ip",
+                      "overrides": null,
+                      "scope": 1497,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 1492,
+                        "name": "ElementaryTypeName",
+                        "src": "380:7:9"
+                      }
+                    ],
+                    "id": 1493,
+                    "name": "VariableDeclaration",
+                    "src": "380:10:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "reporterAddress",
+                      "overrides": null,
+                      "scope": 1497,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1494,
+                        "name": "ElementaryTypeName",
+                        "src": "400:7:9"
+                      }
+                    ],
+                    "id": 1495,
+                    "name": "VariableDeclaration",
+                    "src": "400:23:9"
+                  }
+                ],
+                "id": 1496,
+                "name": "ParameterList",
+                "src": "340:89:9"
+              }
+            ],
+            "id": 1497,
+            "name": "EventDefinition",
+            "src": "319:111:9"
           }
         ],
-        "scope": 1499,
-        "src": "161:287:9"
+        "id": 1498,
+        "name": "ContractDefinition",
+        "src": "154:278:9"
       }
     ],
-    "src": "33:415:9"
+    "id": 1499,
+    "name": "SourceUnit",
+    "src": "32:400:9"
   },
   "compiler": {
     "name": "solc",
     "version": "0.6.10+commit.00c0fcaf.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.2.1",
-  "updatedAt": "2021-01-08T09:16:45.859Z",
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-02T10:52:48.206Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

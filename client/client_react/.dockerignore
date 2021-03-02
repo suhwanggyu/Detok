@@ -1,2 +1,7 @@
+
+
 ./node_modules
+# drizzle라이브러리에 버그가 존재하므로, 커스터마이징 하였기 때문에, 해당 리소스는 직접 탑재
+
+!./node_modules/@drizzle/**
 npm-debug.log

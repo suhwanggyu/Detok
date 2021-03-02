@@ -56,14 +56,14 @@ export default({ drizzle, drizzleState }) => {
             if(xhr.readyState !== XMLHttpRequest.DONE) return;
             if(xhr.status === 200) {
                 let parsed = JSON.parse(xhr.response);
-                let address = parsed.networks[5777].address;
+                let address = parsed.networks[process.env.REACT_APP_ID].address;
                 let xhr2 = new XMLHttpRequest();
                 xhr2.onreadystatechange = async function (e) {
                     if(xhr2.readyState !== XMLHttpRequest.DONE) return;
                     if(xhr2.status === 200) {
                         let parsed2 = JSON.parse(xhr2.response);
                         let abi = parsed2.abi;
-                        let contract = new web3.eth.Contract(abi, parsed2.networks[5777].address);
+                        let contract = new web3.eth.Contract(abi, parsed2.networks[process.env.REACT_APP_ID].address);
                         let amount = await web3.utils.toWei(value,"ether")
                         await contract.methods.approve(address, amount).send( {from:drizzleState.accounts[0], gas: 300000});
                     } else {

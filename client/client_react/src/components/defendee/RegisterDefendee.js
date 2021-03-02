@@ -70,7 +70,7 @@ class RegisterDefendee extends React.Component {
             if(xhr.status === 200) {
                 let parsed = JSON.parse(xhr.response);
                 let abi = parsed.abi;
-                let contract = new web3.eth.Contract(abi, parsed.networks[5777].address);
+                let contract = new web3.eth.Contract(abi, parsed.networks[process.env.REACT_APP_ID].address);
                 let name = await web3.utils.fromUtf8(me.state.name);
                 let eth =  await web3.utils.toWei(me.state.eth, "ether");
                 let reward = await web3.utils.toWei(me.state.reward, "ether");

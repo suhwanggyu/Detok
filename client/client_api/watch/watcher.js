@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+require('dotenv').config();
 /* Use it
    1. Construct object of wather
    2. setContract or setContractByJson or setContractByDirectory
@@ -30,13 +30,13 @@ class Watcher {
     setContractByJson(_json) {
         let parsed = JSON.parse(_json);
         let abi = parsed.abi;
-        this.contract = new this.web3.eth.Contract(abi, parsed.networks[5777].address);
+        this.contract = new this.web3.eth.Contract(abi, parsed.networks[process.env.ID].address);
     }
 
     setContractByDirectory(_dir) {
         let parsed = JSON.parse(fs.readFileSync(jsonfile));
         let abi = parsed.abi;
-        this.contract = new this.web3.eth.Contract(abi, parsed.networks[5777].address);
+        this.contract = new this.web3.eth.Contract(abi, parsed.networks[process.env.ID].address);
     }
 
     setSaver(_saver) {

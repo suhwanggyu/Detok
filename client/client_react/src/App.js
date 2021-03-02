@@ -10,7 +10,7 @@ const drizzle = new Drizzle(drizzleOptions);
 
 const App = () => {
 
-  
+  console.log(drizzle);
   return (
     <DrizzleContext.Provider drizzle={drizzle}>
       <DrizzleContext.Consumer>

@@ -2,11 +2,10 @@ var Web3 = require("web3");
 require('dotenv').config();
 let web3 = new Web3(process.env.RPC);
 const fs = require('fs');
-const { count } = require("console");
 const jsonfile = "./contracts/Inspect.json";
 let parsed = JSON.parse(fs.readFileSync(jsonfile));
 let abi = parsed.abi;
-let ins = new web3.eth.Contract(abi, parsed.networks[5777].address);
+let ins = new web3.eth.Contract(abi, parsed.networks[process.env.ID].address);
 
 
 function watcher(connector){

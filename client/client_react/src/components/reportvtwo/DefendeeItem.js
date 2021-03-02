@@ -49,7 +49,7 @@ export default ({props, drizzle, drizzleState }) => {
             if(xhr.status === 200) {
                 let parsed = JSON.parse(xhr.response);
                 let abi = parsed.abi;
-                let contract = new web3.eth.Contract(abi, parsed.networks[5777].address);
+                let contract = new web3.eth.Contract(abi, parsed.networks[process.env.REACT_APP_ID].address);
                 let argDomain = await web3.utils.fromUtf8(url.parse(domain).href);
                 let argName = await web3.utils.fromUtf8(props.name);
                 let argIP = await web3.utils.fromUtf8(ip);

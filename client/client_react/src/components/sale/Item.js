@@ -30,7 +30,7 @@ export default ({props, drizzle, drizzleState }) => {
             if(xhr.status === 200) {
                 let parsed = JSON.parse(xhr.response);
                 let abi = parsed.abi;
-                let contract = new web3.eth.Contract(abi, parsed.networks[5777].address);
+                let contract = new web3.eth.Contract(abi, parsed.networks[process.env.REACT_APP_ID].address);
                 console.log(typeof props.tokenamount.toString());
                 let amount = await web3.utils.toWei(props.tokenamount.toString(),"ether");
                 await contract.methods.approve(props.sellerAddress, amount).send({from:drizzleState.accounts[0], gas: 100000});

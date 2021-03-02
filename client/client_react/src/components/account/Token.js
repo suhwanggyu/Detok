@@ -13,9 +13,11 @@ export default ({drizzle, drizzleState}) => {
             if(xhr.status === 200){
                 let parsed = JSON.parse(xhr.response);
                 let abi = parsed.abi;
-                let contract = new drizzle.web3.eth.Contract(abi, parsed.networks[5777].address);
+                let contract = new drizzle.web3.eth.Contract(abi, parsed.networks[process.env.REACT_APP_ID].address);
+                console.log(parsed.networks[process.env.REACT_APP_ID].address);
                 let money = await contract.methods.balanceOf(drizzleState.accounts[0]).call();
                 money = await drizzle.web3.utils.fromWei(money, "ether");
+                console.log(drizzleState.accounts);
                 setBalance(parseInt(money));
             } else {
                 console.log("ERROR : TOKEN INFORMATION");

@@ -46,16 +46,16 @@
       "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"decision\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"}],\"name\":\"Inspect\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"}],\"name\":\"RegisterInspector\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"InspectEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about inspect process\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/OneDrive/\\uc6d0\\uaca9/gitConnectProject/tmpdetok/core/decentralized/contracts/events/InspectEvents.sol\":\"InspectEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/OneDrive/\\uc6d0\\uaca9/gitConnectProject/tmpdetok/core/decentralized/contracts/events/InspectEvents.sol\":{\"keccak256\":\"0x2576d4e57a84d32f1e1a5d9cf7308ffad128244965050c9ce0bc224891d5d764\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://32e97ab02da90e7b72c0fe911240917a08f13cfe373db2583314acf1e41f4d90\",\"dweb:/ipfs/QmdnLMBxnF6VrsReG7qr1LFqiW5ye6at8ivvdpK6vFGad2\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212208ca2d2fb250577b114b70a5ea95d48768c3b95c7745af8b5f3acef1c9f74f8df64736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052600080fdfea26469706673582212208ca2d2fb250577b114b70a5ea95d48768c3b95c7745af8b5f3acef1c9f74f8df64736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"decision\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"}],\"name\":\"Inspect\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"}],\"name\":\"RegisterInspector\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"InspectEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about inspect process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol\":\"InspectEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol\":{\"keccak256\":\"0x9951a9a016e038b420945114a9097556e850bc032279ad6dc6c59dbbb0d8ea52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c35f4b589c94fa590237331679195741e0dda0a71544087aa1fe1b615fb3d468\",\"dweb:/ipfs/QmcWsuRvKoqbatzakJAm9CSaYaDTrrYz55fQ4VoXi39DVF\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205d587cdca2195abb283040523984ecb6e209a412e4818d40cf2cab4f19aab95f64736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212205d587cdca2195abb283040523984ecb6e209a412e4818d40cf2cab4f19aab95f64736f6c634300060a0033",
   "immutableReferences": {},
-  "sourceMap": "166:227:7:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "166:227:7:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\n\r\n/**\r\n *@title InspectEvents\r\n *@author Wanggyu, Suh\r\n *@notice Event about inspect process\r\n */\r\ncontract InspectEvents {\r\n    event Inspect(\r\n        address inspector,\r\n        bool decision,\r\n        bytes domain,\r\n        bytes32 defendeeName\r\n    );\r\n\r\n    event RegisterInspector(\r\n        address inspector\r\n    );\r\n}",
-  "sourcePath": "C:\\Users\\tjdhk\\OneDrive\\원격\\gitConnectProject\\tmpdetok\\core\\decentralized\\contracts\\events\\InspectEvents.sol",
+  "sourceMap": "158:216:7:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "158:216:7:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n\n/**\n *@title InspectEvents\n *@author Wanggyu, Suh\n *@notice Event about inspect process\n */\ncontract InspectEvents {\n    event Inspect(\n        address inspector,\n        bool decision,\n        bytes domain,\n        bytes32 defendeeName\n    );\n\n    event RegisterInspector(\n        address inspector\n    );\n}",
+  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol",
   "ast": {
-    "absolutePath": "/C/Users/tjdhk/OneDrive/원격/gitConnectProject/tmpdetok/core/decentralized/contracts/events/InspectEvents.sol",
+    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol",
     "exportedSymbols": {
       "InspectEvents": [
         1444
@@ -77,7 +77,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:32:7"
+        "src": "32:32:7"
       },
       {
         "abstract": false,
@@ -87,7 +87,7 @@
         "documentation": {
           "id": 1429,
           "nodeType": "StructuredDocumentation",
-          "src": "69:95:7",
+          "src": "66:91:7",
           "text": "@title InspectEvents\n@author Wanggyu, Suh\n@notice Event about inspect process"
         },
         "fullyImplemented": true,
@@ -117,7 +117,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1439,
-                  "src": "220:17:7",
+                  "src": "210:17:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -128,7 +128,7 @@
                     "id": 1430,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "220:7:7",
+                    "src": "210:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -147,7 +147,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1439,
-                  "src": "248:13:7",
+                  "src": "237:13:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -158,7 +158,7 @@
                     "id": 1432,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "248:4:7",
+                    "src": "237:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -176,7 +176,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1439,
-                  "src": "272:12:7",
+                  "src": "260:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -187,7 +187,7 @@
                     "id": 1434,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "272:5:7",
+                    "src": "260:5:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -205,7 +205,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1439,
-                  "src": "295:20:7",
+                  "src": "282:20:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -216,7 +216,7 @@
                     "id": 1436,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "295:7:7",
+                    "src": "282:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -226,9 +226,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "209:113:7"
+              "src": "200:108:7"
             },
-            "src": "196:127:7"
+            "src": "187:122:7"
           },
           {
             "anonymous": false,
@@ -249,7 +249,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1443,
-                  "src": "365:17:7",
+                  "src": "348:17:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -260,7 +260,7 @@
                     "id": 1440,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "365:7:7",
+                    "src": "348:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -271,252 +271,272 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "354:35:7"
+              "src": "338:33:7"
             },
-            "src": "331:59:7"
+            "src": "315:57:7"
           }
         ],
         "scope": 1445,
-        "src": "166:227:7"
+        "src": "158:216:7"
       }
     ],
-    "src": "33:360:7"
+    "src": "32:342:7"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/tjdhk/OneDrive/원격/gitConnectProject/tmpdetok/core/decentralized/contracts/events/InspectEvents.sol",
-    "exportedSymbols": {
-      "InspectEvents": [
-        1444
-      ]
+    "attributes": {
+      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol",
+      "exportedSymbols": {
+        "InspectEvents": [
+          1444
+        ]
+      },
+      "license": "MIT"
     },
-    "id": 1445,
-    "license": "MIT",
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".21",
+            "<",
+            "0.7",
+            ".0"
+          ]
+        },
         "id": 1428,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "33:32:7"
+        "name": "PragmaDirective",
+        "src": "32:32:7"
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "documentation": {
-          "id": 1429,
-          "nodeType": "StructuredDocumentation",
-          "src": "69:95:7",
-          "text": "@title InspectEvents\n@author Wanggyu, Suh\n@notice Event about inspect process"
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1444
+          ],
+          "name": "InspectEvents",
+          "scope": 1445
         },
-        "fullyImplemented": true,
-        "id": 1444,
-        "linearizedBaseContracts": [
-          1444
-        ],
-        "name": "InspectEvents",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "children": [
           {
-            "anonymous": false,
-            "documentation": null,
-            "id": 1439,
-            "name": "Inspect",
-            "nodeType": "EventDefinition",
-            "parameters": {
-              "id": 1438,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1431,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "inspector",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1439,
-                  "src": "220:17:7",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 1430,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "220:7:7",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1433,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "decision",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1439,
-                  "src": "248:13:7",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 1432,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "248:4:7",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1435,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "domain",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1439,
-                  "src": "272:12:7",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes_memory_ptr",
-                    "typeString": "bytes"
-                  },
-                  "typeName": {
-                    "id": 1434,
-                    "name": "bytes",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "272:5:7",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes_storage_ptr",
-                      "typeString": "bytes"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1437,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "defendeeName",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1439,
-                  "src": "295:20:7",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 1436,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "295:7:7",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "209:113:7"
+            "attributes": {
+              "text": "@title InspectEvents\n@author Wanggyu, Suh\n@notice Event about inspect process"
             },
-            "src": "196:127:7"
+            "id": 1429,
+            "name": "StructuredDocumentation",
+            "src": "66:91:7"
           },
           {
-            "anonymous": false,
-            "documentation": null,
-            "id": 1443,
-            "name": "RegisterInspector",
-            "nodeType": "EventDefinition",
-            "parameters": {
-              "id": 1442,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1441,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "inspector",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1443,
-                  "src": "365:17:7",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 1440,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "365:7:7",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "354:35:7"
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "Inspect"
             },
-            "src": "331:59:7"
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "inspector",
+                      "overrides": null,
+                      "scope": 1439,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1430,
+                        "name": "ElementaryTypeName",
+                        "src": "210:7:7"
+                      }
+                    ],
+                    "id": 1431,
+                    "name": "VariableDeclaration",
+                    "src": "210:17:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "decision",
+                      "overrides": null,
+                      "scope": 1439,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 1432,
+                        "name": "ElementaryTypeName",
+                        "src": "237:4:7"
+                      }
+                    ],
+                    "id": 1433,
+                    "name": "VariableDeclaration",
+                    "src": "237:13:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "domain",
+                      "overrides": null,
+                      "scope": 1439,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 1434,
+                        "name": "ElementaryTypeName",
+                        "src": "260:5:7"
+                      }
+                    ],
+                    "id": 1435,
+                    "name": "VariableDeclaration",
+                    "src": "260:12:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "defendeeName",
+                      "overrides": null,
+                      "scope": 1439,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 1436,
+                        "name": "ElementaryTypeName",
+                        "src": "282:7:7"
+                      }
+                    ],
+                    "id": 1437,
+                    "name": "VariableDeclaration",
+                    "src": "282:20:7"
+                  }
+                ],
+                "id": 1438,
+                "name": "ParameterList",
+                "src": "200:108:7"
+              }
+            ],
+            "id": 1439,
+            "name": "EventDefinition",
+            "src": "187:122:7"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "RegisterInspector"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "inspector",
+                      "overrides": null,
+                      "scope": 1443,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1440,
+                        "name": "ElementaryTypeName",
+                        "src": "348:7:7"
+                      }
+                    ],
+                    "id": 1441,
+                    "name": "VariableDeclaration",
+                    "src": "348:17:7"
+                  }
+                ],
+                "id": 1442,
+                "name": "ParameterList",
+                "src": "338:33:7"
+              }
+            ],
+            "id": 1443,
+            "name": "EventDefinition",
+            "src": "315:57:7"
           }
         ],
-        "scope": 1445,
-        "src": "166:227:7"
+        "id": 1444,
+        "name": "ContractDefinition",
+        "src": "158:216:7"
       }
     ],
-    "src": "33:360:7"
+    "id": 1445,
+    "name": "SourceUnit",
+    "src": "32:342:7"
   },
   "compiler": {
     "name": "solc",
     "version": "0.6.10+commit.00c0fcaf.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.2.1",
-  "updatedAt": "2021-01-08T09:16:45.856Z",
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-02T10:52:48.203Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

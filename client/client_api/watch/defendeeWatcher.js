@@ -1,11 +1,16 @@
 var Web3 = require("web3");
 require('dotenv').config();
-let web3 = new Web3(process.env.RPC);
+let web3 = new Web3(
+    // Replace YOUR-PROJECT-ID with a Project ID from your Infura Dashboard
+    new Web3.providers.WebsocketProvider(process.env.RPC)
+);
+  
 const fs = require('fs');
 const jsonfile = "./contracts/JudgeByMedia.json";
 let parsed = JSON.parse(fs.readFileSync(jsonfile));
 let abi = parsed.abi;
-let judge = new web3.eth.Contract(abi, parsed.networks[5777].address);
+console.log(parsed.networks[process.env.ID] ,process.env.ID);
+let judge = new web3.eth.Contract(abi, parsed.networks[process.env.ID].address);
 let connWork = require('./connector_work');
 const url = require('url');
 function watcher(connector){
@@ -13,8 +18,28 @@ function watcher(connector){
     watchRegisterDefendee(connector);
     watchJudge(connector);
 }
-
+const subscription = web3.eth.subscribe('logs', {
+    address: [parsed.networks[process.env.ID].address],
+    topics: null
+}, (error, blockHeader) => {
+    if (error) return console.error(error);
+    console.log('Successfully subscribed!', blockHeader);
+    console.log('Successfully subscribed!', blockHeader);
+}).on('data', (blockHeader) => {
+    console.log('data: ', blockHeader);
+});
+  
 function watchRegisterCopyrighter(connector){
+    judge.getPastEvents(
+        "RegisterCopyrighter",
+        { fromBlock: "latest", toBlock: "latest" },
+        (errors, events) => {
+            console.log(events);
+            if (!errors) {
+            }
+        }
+    );
+
     judge.events.RegisterCopyrighter((err,event) =>{
         console.log("Copyrighter registering Detect!");
         connector.query('insert into copyrighter(`address`,`name`,`logo`) values ("' + 

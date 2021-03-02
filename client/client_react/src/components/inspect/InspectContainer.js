@@ -3,7 +3,7 @@ import { newContextComponents } from "@drizzle/react-components";
 import Inspect from 'components/inspect/Inspect';
 import style from 'css/Inspect.module.css';
 import InspectorInfo from 'components/inspect/InspectorInfo';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, Button} from 'react-bootstrap';
 const { ContractForm } = newContextComponents;
 
 
@@ -50,15 +50,32 @@ export default ({ drizzle, drizzleState}) => {
       );
     }
   },[key]);
-  
+
+  function reg(){
+    const web3 = drizzle.web3;
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = async function (e) {
+        if(xhr.readyState !== XMLHttpRequest.DONE) return;
+        if(xhr.status === 200) {
+            let parsed = JSON.parse(xhr.response);
+            let abi = parsed.abi;
+            let contract = new web3.eth.Contract(abi, parsed.networks[process.env.REACT_APP_ID].address);
+            console.log(contract.methods);
+            await contract.methods.registerInspector().send( {from:drizzleState.accounts[0], gas: 300000});
+        } else {
+            console.log('Error!');
+        }
+    }
+    xhr.open('POST',process.env.REACT_APP_API + '/contractjson');
+    xhr.setRequestHeader('Content-type', 'application/json');
+    xhr.send(JSON.stringify({'type':'Inspect'}));
+  }
+
   if(inspector === false){
     return (
         <div className={style.registerContainer}>
             <h1>Register Inspector</h1>
-            <ContractForm drizzle={drizzle} 
-            contract="Inspect" 
-            method="registerInspector"
-                />
+            <Button variant="outline-primary" onClick={reg}>Register</Button>
         </div>
     );
   }

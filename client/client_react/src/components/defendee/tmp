@@ -6,7 +6,7 @@
             if(approve.status === 200){
                 let approveParse = JSON.parse(approve.response);
                 let approveAbi = approveParse.abi;
-                let DefenderTokencontract = new web3.eth.Contract(approveAbi, approveParse.networks[5777].address);
+                let DefenderTokencontract = new web3.eth.Contract(approveAbi, approveParse.networks[process.env.REACT_APP_ID].address);
                 let reward = await web3.utils.toWei(me.state.reward, "ether");
                 let account = await web3.eth.getAccounts();
 
@@ -21,7 +21,7 @@
                     if(xhr.status === 200) {
                         let parsed = JSON.parse(xhr.response);
                         let abi = parsed.abi;
-                        let contract = new web3.eth.Contract(abi, parsed.networks[5777].address);
+                        let contract = new web3.eth.Contract(abi, parsed.networks[process.env.REACT_APP_ID].address);
                         let name = await web3.utils.fromUtf8(me.state.name);
                         let eth =  await web3.utils.toWei(me.state.eth, "ether");
                         
