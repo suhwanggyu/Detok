@@ -1,5 +1,6 @@
 /client/client_api/node_modules
 /client/client_react/node_modules
+!/client/client_react/node_modules/@drizzle/*
 /core/decentralized/node_modules
 /work/work_machine/analyzer/analyzer/__pycache__
 /work/work_machine/analyzer/database/__pycache__

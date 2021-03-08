@@ -3,12 +3,12 @@ import {CardColumns, FormControl, Navbar, Nav, Form} from 'react-bootstrap';
 import DefendeeItem from 'components/copyrighter/DefendeeItem';
 
 
-export default ({drizzleState}) => {
+export default React.memo(({drizzleState}) => {
     let [result, setResult] = useState([{itemId:null, sellerAddress:null, sellerName:null, detailed: null, tokenamount: null, logo:null}]);
     useEffect(() => {
         takeDefendee();
     }, []);
-
+    console.log("aa");
     function takeDefendee(){
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = (e) => {
@@ -38,4 +38,4 @@ export default ({drizzleState}) => {
             <RenderCard />
         </div>
     );
-};
+}, (prev, next) => {console.log(prev, next); return prev.accounts[0] == next.accounts[0]});

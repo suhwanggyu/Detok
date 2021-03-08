@@ -1,9 +1,20 @@
 var Web3 = require("web3");
 require('dotenv').config();
-let web3 = new Web3(
-    // Replace YOUR-PROJECT-ID with a Project ID from your Infura Dashboard
-    new Web3.providers.WebsocketProvider(process.env.RPC)
-);
+var provider = new Web3.providers.WebsocketProvider(process.env.RPC);
+let web3 = new Web3(provider);
+
+provider.on('end', e => {
+    console.log('WS closed');
+    console.log('Attempting to reconnect...');
+    provider = new Web3.providers.WebsocketProvider(process.env.RPC);
+
+    provider.on('connect', function () {
+        console.log('WSS Reconnected');
+    });
+    
+    web3.setProvider(provider);
+});
+
   
 const fs = require('fs');
 const jsonfile = "./contracts/JudgeByMedia.json";
@@ -13,6 +24,7 @@ console.log(parsed.networks[process.env.ID] ,process.env.ID);
 let judge = new web3.eth.Contract(abi, parsed.networks[process.env.ID].address);
 let connWork = require('./connector_work');
 const url = require('url');
+
 function watcher(connector){
     watchRegisterCopyrighter(connector);
     watchRegisterDefendee(connector);

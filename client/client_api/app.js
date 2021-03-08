@@ -18,6 +18,7 @@ let connector = require('./watch/connector');
 let judge = require('./routes/judge');
 const cors = require('cors');
 
+
 defendeeWatcher(connector);
 inspectWatcher(connector);
 reportWatcher(connector);

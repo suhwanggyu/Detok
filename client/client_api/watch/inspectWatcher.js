@@ -1,6 +1,20 @@
 var Web3 = require("web3");
 require('dotenv').config();
-let web3 = new Web3(process.env.RPC);
+var provider = new Web3.providers.WebsocketProvider(process.env.RPC);
+let web3 = new Web3(provider);
+
+provider.on('end', e => {
+    console.log('WS closed');
+    console.log('Attempting to reconnect...');
+    provider = new Web3.providers.WebsocketProvider(process.env.RPC);
+
+    provider.on('connect', function () {
+        console.log('WSS Reconnected');
+    });
+    
+    web3.setProvider(provider);
+});
+
 const fs = require('fs');
 const jsonfile = "./contracts/Inspect.json";
 let parsed = JSON.parse(fs.readFileSync(jsonfile));

@@ -4,7 +4,7 @@ import style from "css/sale.module.css";
 import Input from 'components/copyrighter/Input';
 import axios from 'axios';
 
-export default ({props, drizzleState }) => {
+export default ({props}) => {
     const url = require('url');
     const [clicked, setClicked] = useState(false);
     const [show, setShow] = useState(false);
@@ -52,9 +52,9 @@ export default ({props, drizzleState }) => {
         formData.append('file', domain);
         formData.append('name', props.name);
         await axios.post(process.env.REACT_APP_API + "/defendee/img", formData).then(res => {
-            alert('성공')
+            alert('성공');
         }).catch(err => {
-            alert('실패')
+            alert('실패');
         })
     }
 
@@ -68,7 +68,7 @@ export default ({props, drizzleState }) => {
                         {props.detailed}<br/>
                         {props.rewardAmount/2 + " DFD"}
                     </Card.Text>
-                    <Button className={style.buyBtn} variant="outline-danger" onClick={(e)=>{handleClicked();handleShow()}}>Report</Button>
+                    <Button className={style.buyBtn} variant="outline-danger" onClick={(e)=>{handleClicked(); handleShow()}}>Report</Button>
                     </Card.Body>
 
                     <Modal show={show} onHide={handleClose}>

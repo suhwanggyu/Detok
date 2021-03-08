@@ -2,14 +2,29 @@ let Watcher = require('./watcher');
 let mysqlSavar = require ('./mysqlSaver');
 require('dotenv').config();
 var Web3 = require("web3");
-let web3 = new Web3(process.env.RPC);
+var provider = new Web3.providers.WebsocketProvider(process.env.RPC);
+let web3 = new Web3(provider);
+
+provider.on('end', e => {
+    console.log('WS closed');
+    console.log('Attempting to reconnect...');
+    provider = new Web3.providers.WebsocketProvider(process.env.RPC);
+
+    provider.on('connect', function () {
+        console.log('WSS Reconnected');
+    });
+    
+    web3.setProvider(provider);
+});
+
+
 const fs = require('fs');
-const { kMaxLength } = require("buffer");
 const jsonfile = "./contracts/Notify.json";
 
 async function action1(event, connector) {
     console.log("Report Detect!");
     try{
+        console.log(event.returnValues);
         await connector.query('insert into report(`domain`, `reporterAddress`, `judge`, `defendeeName`, `ip`, `step`, `decision`, `detailed`) values ("' + 
         web3.utils.toUtf8(event.returnValues.domain) +'","' + 
         event.returnValues.reporterAddress + '",null,"' +

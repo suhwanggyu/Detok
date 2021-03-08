@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '56.25%', // 16:9
   },
 }));
+
 const styles = (theme) => ({
   pitem: {
     marginTop: theme.spacing(2),
@@ -39,26 +40,40 @@ const options = {
       props: { gutterBottom: true, variant: 'caption', paragraph: true },
     },
     a: { component:({children, ...props }) => (
-      <CardMedia
-        image={children}
+      <img
+        src={children}
         title="Paella dish"
-        style={{width:'80rem', height:'60rem'}}
+        style={{width:'100%', height:'auto'}}
       />
     )}, 
+    b: { component:({children, ...props }) => (
+      <img
+        src={children}
+        title="Paella dish"
+        style={{width:'100%', height:'auto'}}
+      />
+    )},
     p: {
       component: withStyles(styles)(({ classes, ...props }) => (
         <p className={classes.pitem}>
-          <Typography component="span" {...props} />
+          <Typography component="span" style={{fontSize:'2.5ch'}} {...props} />
         </p>
       )),
     },
     li: {
       component: withStyles(styles)(({ classes, ...props }) => (
         <li className={classes.pitem}>
-          <Typography component="span" {...props} />
+          <Typography component="span" style={{fontSize:'2.5ch'}} {...props} />
         </li>
       )),
     },
+    code:{
+      component:({children, ...props }) => (
+        <code style={{fontSize:'2.5ch'}}>
+          {children}
+        </code>
+      ),
+    }
   }
 };
 

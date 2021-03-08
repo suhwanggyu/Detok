@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useMemo} from "react";
 import RegisterDefendee from './defendee/RegisterDefendee';
 import RegisterCopyrighter from 'components/copyrighter/RegisterCopyrighter';
 import JudgeTarget from 'components/copyrighter/JudgeTarget';
@@ -30,7 +30,7 @@ export default ({ drizzle, drizzleState }) => {
         }
     },[copyrighter, registered]);
 
-
+    
     const Content = () => {
         if(key === 1) {
             return (

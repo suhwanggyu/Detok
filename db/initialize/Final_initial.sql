@@ -16,8 +16,7 @@ create table defendee (
     detailed longtext,
     mode int not null,
     copyrighterAddress char(42) not null,
-    primary key(name),
-    foreign key(copyrighterAddress) references copyrighter(address)
+    primary key(name)
 );
 
 create table defendeetmp (
@@ -38,7 +37,7 @@ create table saleitems(
 
 create table reporttmp(
 	domain varchar(255),
-    name varchar(20),
+    name varchar(50),
     keyword varchar(20)
 );
 
@@ -51,8 +50,7 @@ create table report (
     ip varchar(32) not null,
     step int not null,
     decision bool,
-    detailed longtext,
-    foreign key(defendeeName) references defendee(name)
+    detailed longtext
 );
 create table inspector(
 	`address` char(42) NOT NULL,
@@ -66,17 +64,13 @@ create table inspect(
     reportid bigint not null,
     decision bool not null,
     correct bool,
-    primary key(inspectorAddress, reportid),
-    foreign key(reportid) references report(id),
-    foreign key(inspectorAddress) references inspector(address)
+    primary key(inspectorAddress, reportid)
 );
 
 create table inspecttmp(
 	address char(42) not null,
     reportid bigint not null
 );
-
-
 
 
 create table ordered(
