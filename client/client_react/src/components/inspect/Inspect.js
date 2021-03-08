@@ -41,7 +41,6 @@ export default({ drizzle, drizzleState }) => {
         if(target){
 
             return(
-                
                 <div style={{'margin':'1rem','paddingTop':'3rem', 'textAlign':'center'}}>
                     <Card style={{ 'width': '26rem', 'display': 'inline-block'}}>
                         <Card.Img variant="top" src={target[0].imgdist} />

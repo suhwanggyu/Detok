@@ -47,7 +47,7 @@ export default ({ drizzle, drizzleState }) => {
                 <Nav.Link style={ key === 'inspect' ? ActiveStyle:{'color':'#A9A9A9'}} eventKey="inspect">Inspect</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link style={ key === 'judge' ? ActiveStyle:{'color':'#A9A9A9'}} eventKey="judge">Defendee</Nav.Link>
+                <Nav.Link style={ key === 'judge' ? ActiveStyle:{'color':'#A9A9A9'}} eventKey="judge">Copyrighter</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
@@ -56,7 +56,6 @@ export default ({ drizzle, drizzleState }) => {
               <InfoWrapper />
               <Tab.Pane eventKey="sale">
                 <Sale drizzle={drizzle} drizzleState={drizzleState}/>
-                {/*프로토 타입인 관계로 보이지 않습니다.*/}
               </Tab.Pane>
               <Tab.Pane eventKey="report">
                 <Reporter drizzle={drizzle} drizzleState={drizzleState}/>

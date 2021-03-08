@@ -1,11 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { newContextComponents } from "@drizzle/react-components";
 import Inspect from 'components/inspect/Inspect';
 import style from 'css/Inspect.module.css';
 import InspectorInfo from 'components/inspect/InspectorInfo';
 import {Navbar, Nav, Button} from 'react-bootstrap';
-const { ContractForm } = newContextComponents;
-
 
 export default ({ drizzle, drizzleState}) => {
   const [inspector, setInspector] = useState(false);
@@ -26,12 +23,13 @@ export default ({ drizzle, drizzleState}) => {
       xhr.setRequestHeader('Content-type','application/json');
       xhr.send(JSON.stringify({'address':drizzleState.accounts[0]}));
     }
-  });
+  },[drizzleState]);
 
   /**
    * @description Because Drizzle cause to render too often in local testnet due to short blocktime,
    * exclude dependency from drizzle and drizzleState on purpose
    * After prototype, It will be using only drizzleState or not using drizzle, or include drizzle to dependency array
+   * 해당 부분에서 고의적으로 hook의 drizzle에 대한 dependency를 제거하였습니다.
    */
   const InspectContent = useCallback(() =>{
     if(key === 1) {

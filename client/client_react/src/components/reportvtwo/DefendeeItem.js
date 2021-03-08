@@ -12,7 +12,8 @@ export default ({props, drizzle, drizzleState }) => {
     const [ip, setIP] = useState("0.0.0.0");
     const handleClicked = () => {setClicked(true);}
     const randBadge = ["primary", "secondary", "success","danger","warning","light","dark"];
-    const [keyword, setKeyword] = useState("")
+    const [keyword, setKeyword] = useState("");
+    
     useEffect(()=>{
         if(ip !== "0.0.0.0"){
             sendReport();
@@ -64,7 +65,6 @@ export default ({props, drizzle, drizzleState }) => {
         xhr.send(JSON.stringify({'type':'Notify'}));
     }
 
-    
     function beforeSendReport(){
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = async function (e) {

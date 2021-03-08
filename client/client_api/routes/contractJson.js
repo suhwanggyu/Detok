@@ -12,7 +12,6 @@ const fs = require('fs');
 //let jud = judge.deployed();
 
 router.post('/', function(req, res, next){
-    console.log(req.body.type);
     const jsonfile = "./contracts/" + req.body.type + ".json";
     let parsed = JSON.parse(fs.readFileSync(jsonfile));
     res.status(200).json(parsed);

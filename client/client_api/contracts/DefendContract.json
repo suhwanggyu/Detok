@@ -1,0 +1,140 @@
+{
+  "contractName": "DefendContract",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/mize159/Desktop/gitConnectProject/Defender/defender/contracts/DefendContract.sol\":\"DefendContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/mize159/Desktop/gitConnectProject/Defender/defender/contracts/DefendContract.sol\":{\"keccak256\":\"0x612b753f275963c83b1845afeb24d36183eb7f93d63ba647688123db5136e74b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0489fa6602d9ea45f3a28daf435a740a14132254f271d6d89d54586918a87b86\",\"dweb:/ipfs/QmeH6dYM8cDKuzrsXqR9BuLKB5MififFHf2xBomVSZsqi6\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220cc9b290c157397ff4540b7fe401f7b09995a6470d4185b9282503be2457b1e8d64736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220cc9b290c157397ff4540b7fe401f7b09995a6470d4185b9282503be2457b1e8d64736f6c634300060a0033",
+  "immutableReferences": {},
+  "sourceMap": "73:726:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "73:726:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\n\r\n\r\n\r\ncontract DefendContract {\r\n    \r\n    /*constructor(DefenderToken _token) public {\r\n        token = _token;\r\n    }*/\r\n    /*\r\n    constructor() public {\r\n        representor = msg.sender;\r\n        compenSationQueue = new Queue();\r\n    }\r\n\r\n    modifier onlyRepresentor() {\r\n        require(msg.sender == representor, \"\");\r\n        _;\r\n    }\r\n\r\n    /* Getter function for pending money that give to reporter and inpector */\r\n    /*function getBalance() public view returns (uint256 bal) {\r\n        bal = address(this).balance;\r\n    }\r\n\r\n    function getMeta(bytes32 name, bytes memory domain) public pure returns (bytes memory) {\r\n        return Report.makeMetaDataForLink(name, domain);\r\n    }\r\n    /* TODO : remove */\r\n    \r\n}",
+  "sourcePath": "C:/Users/mize159/Desktop/gitConnectProject/Defender/defender/contracts/DefendContract.sol",
+  "ast": {
+    "absolutePath": "/C/Users/mize159/Desktop/gitConnectProject/Defender/defender/contracts/DefendContract.sol",
+    "exportedSymbols": {
+      "DefendContract": [
+        132
+      ]
+    },
+    "id": 133,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 131,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 132,
+        "linearizedBaseContracts": [
+          132
+        ],
+        "name": "DefendContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 133,
+        "src": "73:726:1"
+      }
+    ],
+    "src": "33:766:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/mize159/Desktop/gitConnectProject/Defender/defender/contracts/DefendContract.sol",
+    "exportedSymbols": {
+      "DefendContract": [
+        132
+      ]
+    },
+    "id": 133,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 131,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 132,
+        "linearizedBaseContracts": [
+          132
+        ],
+        "name": "DefendContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 133,
+        "src": "73:726:1"
+      }
+    ],
+    "src": "33:766:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.10+commit.00c0fcaf.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x7540Af7A17718122C4c0123e3357d77DFCc4147F",
+      "transactionHash": "0x9b7cd2fc53e537d726d553c1b2a75a31c96d5055c6b0224683d1a264d570dbe7"
+    },
+    "1594695225578": {
+      "events": {},
+      "links": {},
+      "address": "0x6B2CC895F249B168475236a87af71cCFa6cEF0dA",
+      "transactionHash": "0x6bd9bdc444d0a1e71ca0ce3ff3d7fab069c355ec6b4edfba8a791204a8562a45"
+    },
+    "1594696144041": {
+      "events": {},
+      "links": {},
+      "address": "0x59c99eb51B5E052E0Fb83822436Ba4E0e1f99247",
+      "transactionHash": "0x2db5fc0d5b7d0184b5303d7009e9008fa08d97e7f2e9d256c3c21aca9dc052ca"
+    },
+    "1594697257910": {
+      "events": {},
+      "links": {},
+      "address": "0x198fc80623Ecd22dfFf4F33b36A72B6FA67De855",
+      "transactionHash": "0x913b0f907b5b6920c4ea85eaa30676de3c88c1d106f16d3f16f817010398ead3"
+    }
+  },
+  "schemaVersion": "3.2.2",
+  "updatedAt": "2020-07-26T13:39:42.265Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

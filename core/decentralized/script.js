@@ -19,7 +19,6 @@ module.exports = async function(callback) {
     await jud.registerCopyrighter(copyrighter1, {from:acc[0]});
     copyrighter2 = web3.utils.fromAscii("Naver");
     await jud.registerCopyrighter(copyrighter2, {from:acc[1]});
-      /*
     copyrighter3 = web3.utils.fromAscii("Bts");
     await jud.registerCopyrighter(copyrighter3, {from:acc[2]});
     copyrighter4 = web3.utils.fromAscii("Imagine dragons");
@@ -39,14 +38,14 @@ module.exports = async function(callback) {
     let multi2 = web3.utils.fromUtf8("bts - On");
     let multi3 = web3.utils.fromUtf8("Frozen");
     let multi4 = web3.utils.fromUtf8("Its Okay to Not Be Okay");
-    let multi5 = web3.utils.fromUtf8("외모지상주의");
+    let multi5 = web3.utils.fromUtf8("Appearanceism");
     let multi6 = web3.utils.fromUtf8("Radioactive");
-    let multi7 = web3.utils.fromUtf8("あなたの番です");
+    let multi7 = web3.utils.fromUtf8("It's your turn");
     let multi8 = web3.utils.fromUtf8("Stranger Things");
     let multi9 = web3.utils.fromUtf8("Believer");
     let multi10 = web3.utils.fromUtf8("Zootopia");
-    let multi11 = web3.utils.fromUtf8("삼시세끼 어촌편5");
-    let val = await web3.utils.toWei("1.10", "ether");
+    let multi11 = web3.utils.fromUtf8("Three meals5");
+    let val = await web3.utils.toWei("0.3", "ether");
     let val2 = "1000000000000000000000";
     let val3 = "6700000000000000000000";
     let val4 = "120000000000000000000";
@@ -68,8 +67,8 @@ module.exports = async function(callback) {
     await jud.registerDefendee(multi10, val, val6, 3, {from:acc[8], value : val});
     await jud.registerDefendee(multi11, val, val7, 3, {from:acc[4], value : val});
 
- */
-    val = await web3.utils.toWei("1.0","ether")
+ 
+    val = await web3.utils.toWei("0.3","ether")
     val2 = "100000000000000000000"
     val3 = "120000000000000000000"
     val4 = "130000000000000000000"
@@ -78,17 +77,18 @@ module.exports = async function(callback) {
     val7 = "210000000000000000000"
     val8 = "180000000000000000000"
     val9 = "230000000000000000000"
-    multi1 = web3.utils.fromUtf8("루머의 루머의 루머")
-    multi2 = web3.utils.fromUtf8("러브, 데스 + 로봇")
-    multi3 = web3.utils.fromUtf8("오렌지 이즈 더 뉴 블랙")
-    multi5 = web3.utils.fromUtf8("워킹데드")
-    multi6 = web3.utils.fromUtf8("브레이킹배드")
-    multi8 = web3.utils.fromUtf8("블랙미러")
+    multi1 = web3.utils.fromUtf8("13 Reasons Why")
+    multi2 = web3.utils.fromUtf8("LOVE DEATH + ROBOTS")
+    multi3 = web3.utils.fromUtf8("Orange Is the New Black")
+    multi5 = web3.utils.fromUtf8("The Walking Dead")
+    multi6 = web3.utils.fromUtf8("Breaking Bad")
+    multi8 = web3.utils.fromUtf8("Black Mirror")
 
     await jud.registerDefendee(multi1, val, val2, 1, {from:acc[0], value : val})
-    //await jud.registerDefendee(multi2, val, val3, 1, {from:acc[0], value : val})
-    //await jud.registerDefendee(multi3, val, val4, 1, {from:acc[0], value : val})
-    //await jud.registerDefendee(multi5, val, val6, 1, {from:acc[0], value : val})
-    //await jud.registerDefendee(multi6, val, val7, 1, {from:acc[0], value : val})
-    //await jud.registerDefendee(multi8, val, val9, 1, {from:acc[0], value : val})
+    await jud.registerDefendee(multi2, val, val3, 1, {from:acc[0], value : val})
+    await jud.registerDefendee(multi3, val, val4, 1, {from:acc[0], value : val})
+    await jud.registerDefendee(multi5, val, val6, 1, {from:acc[0], value : val})
+    await jud.registerDefendee(multi6, val, val7, 1, {from:acc[0], value : val})
+    await jud.registerDefendee(multi8, val, val9, 1, {from:acc[0], value : val})
+    console.log("Finish! press Ctrl + C");
 }

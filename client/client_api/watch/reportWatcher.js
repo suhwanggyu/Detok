@@ -7,25 +7,32 @@ const fs = require('fs');
 const { kMaxLength } = require("buffer");
 const jsonfile = "./contracts/Notify.json";
 
-function action1(event, connector) {
+async function action1(event, connector) {
     console.log("Report Detect!");
-    connector.query('insert into report(`domain`, `reporterAddress`, `judge`, `defendeeName`, `ip`, `step`, `decision`, `detailed`) values ("' + 
-    web3.utils.toUtf8(event.returnValues.domain) +'","' + 
-    event.returnValues.reporterAddress + '",null,"' +
-    web3.utils.toUtf8(event.returnValues.defendeeName) + '","' + 
-    web3.utils.toUtf8(event.returnValues.ip) + '",' + 
-    1 + ',null,null);' );
+    try{
+        await connector.query('insert into report(`domain`, `reporterAddress`, `judge`, `defendeeName`, `ip`, `step`, `decision`, `detailed`) values ("' + 
+        web3.utils.toUtf8(event.returnValues.domain) +'","' + 
+        event.returnValues.reporterAddress + '",null,"' +
+        web3.utils.toUtf8(event.returnValues.defendeeName) + '","' + 
+        web3.utils.toUtf8(event.returnValues.ip) + '",' + 
+        1 + ',null,null);' );
+    } catch(e){
+        console.log(e);
+    }
 }
 
 
-function action2(event, connector) {
+async function action2(event, connector) {
     console.log("BlackList Register Detect!");
-    console.log(event.returnValues);
-    connector.query('insert into blacklistIP values ("' + 
-    web3.utils.toUtf8(event.returnValues.defendeeName) +'","' + 
-    web3.utils.toUtf8(event.returnValues.ip) + '","' +
-    event.returnValues.reporterAddress + '");'
-    );
+    try{
+        await connector.query('insert into blacklistIP values ("' + 
+        web3.utils.toUtf8(event.returnValues.defendeeName) +'","' + 
+        web3.utils.toUtf8(event.returnValues.ip) + '","' +
+        event.returnValues.reporterAddress + '");'
+        );
+    } catch(e) {
+        console.log(e);
+    }
 }
 
 function watcher(connector){

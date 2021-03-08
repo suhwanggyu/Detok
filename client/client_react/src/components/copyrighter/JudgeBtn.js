@@ -21,7 +21,6 @@ export default({ target, drizzle, drizzleState }) => {
     }
 
     function sendJudge(_domain, _defendeeName, _decision){
-        
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = async function (e) {
             if(xhr.readyState !== XMLHttpRequest.DONE) return;

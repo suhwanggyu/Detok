@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -14,12 +14,12 @@ const useStyles = makeStyles((theme) => ({
   elem:{
     textAlign:"left",
     width:"50%",
-    paddingTop:"1rem"
+    paddingTop:"2rem"
   }
 }));
 
 
-export default () => {
+export default ({ drizzle, drizzleState }) => {
   const classes = useStyles();
   return (
       <Grid
@@ -30,13 +30,14 @@ export default () => {
       alignItems="center"
       >
         <Grid item className={classes.elem}>
-        Loading...<br/>
+        Loading... 메타마스크를 통해 로그인 중입니다.<br/>
         만약 메타마스크를 설치하지 않았다면,<br/>
         <a target="_blank" rel="noopener noreferrer" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ko">
             https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ko
         </a><br/>
         에서 설치해 주십시오.<br/><br/><br/>
-        설치후 절차는 아래를 따라하시고 새로고침(F5)하시면 실행됩니다.<br />
+        
+        현재 Ropsten 테스트 네트워크에 연결되어 있기 때문에, 아래의 절차를 수행해 주시고, 새로고침(F5)하시면 실행됩니다.<br />
         </Grid>
         <Grid item className={classes.elem}>
           <h3>1. Metamask 설치 및 새 지갑 생성</h3>

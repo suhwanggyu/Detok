@@ -21,7 +21,6 @@ export default({ drizzle, drizzleState }) => {
                 if(parsed){
                     let parsedName = JSON.parse(xhr.response).defendee;
                     let temp = [];
-                    console.log(parsedName);
                     parsedName.forEach(element => {
                         temp.push(parsed.filter(el => {
                             return element.name === el.name;
@@ -50,7 +49,6 @@ export default({ drizzle, drizzleState }) => {
     },[takeTarget]);
 
     const approve = () => {
-        
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = async function (e) {
             if(xhr.readyState !== XMLHttpRequest.DONE) return;
@@ -106,7 +104,6 @@ export default({ drizzle, drizzleState }) => {
 
         return(
             <div className={style.warningnothing}>
-                <h1>you don't have any new report</h1>
             </div>
         );
     }

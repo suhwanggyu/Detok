@@ -41,7 +41,7 @@ export default ({props, drizzle, drizzleState }) => {
         }
         xhr.open('POST',process.env.REACT_APP_API + '/contractjson');
         xhr.setRequestHeader('Content-type', 'application/json');
-        xhr.send(JSON.stringify({'type':'DefenderToken'}));
+        xhr.send(JSON.stringify({'type':'DetokToken'}));
     }
     
     /* TODO : implement buy */

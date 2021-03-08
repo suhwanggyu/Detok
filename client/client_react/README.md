@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+웹 서버
+=======
 
-## Available Scripts
 
-In the project directory, you can run:
+1. Build and Execution
+-----------------------
 
-### `yarn start`
+Node
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    npm install
+    npm start
+    
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Docker
+    docker build -t webserver .
+    docker run -d -p 80:80 -e APIHOST={Api server name} -e SELF={Machine ip} webserver
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Description
+--------
 
-### `yarn build`
+블록체인의 인터페이스 역할을 수행하는 웹 서버입니다. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. 사용자에게 블록체인의 정보를 보여줍니다.
+2. 사용자에게 블록체인의 정보를 캐싱한 api에서 보낸 자원을 보여줍니다.
+3. 사용자가 블록체인에 거래를 요청할 수 있게합니다.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+웹 서버는 Stateless 하기 때문에, <br />
+사용성 증가와 사용자의 수수료 부담을 줄이기 위해, 거래 로직에 필요하지 않은 정보를 블록체인 외부에 두기 위해<br />
+데이터베이스를 포함하는 was 서버가 하나 더 존재합니다. <br />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Developer
+------------
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+wanggyu, suh

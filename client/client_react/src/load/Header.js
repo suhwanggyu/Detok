@@ -4,7 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-
+import { changeMenu } from './indexSlice.js';
+import { useDispatch } from 'react-redux';
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
@@ -23,9 +24,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Header(props) {
+  const dispatch = useDispatch();
   const classes = useStyles();
   const { sections, title } = props;
-
+  const handleClick = (val) => {
+    dispatch(changeMenu(val));
+  }
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
@@ -48,6 +52,7 @@ export default function Header(props) {
             variant="body2"
             href={section.url}
             className={classes.toolbarLink}
+            onClick={()=>handleClick(section.value)}
           >
             {section.title}
           </Link>

@@ -10,7 +10,6 @@ router.post('/list',async function (req, res, next){
         'select itemId, sellerAddress, sellerName, detailed, tokenamount, logo from saleitems where sellerName like "' +
         req.body.name + '%";'
     );
-    console.log(result);
     res.status(200).json({'result':result});
 });
 
@@ -22,7 +21,6 @@ router.post('/buy',async function (req, res, next){
         + req.body.orderAddress + '",' + req.body.itemId +',"' +
         moment(new Date()).format("YYYY-MM-DD HH:mm:ss") + '",1,"'+req.body.userId + '");'
     );
-    console.log(result);
     res.status(200).json({});
 });
 
@@ -34,7 +32,6 @@ router.post('/cancel',async function (req, res, next){
         + req.body.orderAddress + '",' + req.body.itemId +',"' +
         moment(new Date()).format("YYYY-MM-DD HH:mm:ss") + '",0,"'+req.body.userId + '");'
     );
-    console.log(result);
     res.status(200).json({});
 });
 

@@ -5,7 +5,7 @@ import JudgeTarget from 'components/copyrighter/JudgeTarget';
 import style from 'css/RegisterDefendee.module.css';
 import {Navbar, Nav} from 'react-bootstrap';
 import Token from 'components/account/Token';
-
+import MyCardColumn from 'components/copyrighter/MyCardColumn';
 export default ({ drizzle, drizzleState }) => {
     const [copyrighter, setIsCopyrighter] = useState(false);
     const [registered, setRegistered] = useState(false);
@@ -46,7 +46,7 @@ export default ({ drizzle, drizzleState }) => {
         }
         if(key === 3) {
             return (
-                <div></div>
+                <MyCardColumn drizzleState={drizzleState}/>
             );
         }
     }
@@ -54,12 +54,7 @@ export default ({ drizzle, drizzleState }) => {
     if(!copyrighter){
         return (
             <div className={style.App}>
-                테스트 과정에서는 보상을 줄 수 있는 사람이 개발자 밖에 없기 때문에<br />
-                등록창을 열어두지 않습니다. 체험해보고 싶은 사람은 <br />
-                wang1@hanyang.ac.kr 로 메일 주시면 따로 열어서 보여드리겠습니다.<br />
-                In test, because only developer has reward,<br />
-                Prototype don't open register menu.
-                {/*<RegisterCopyrighter setRegistered={setRegistered} drizzle={drizzle} drizzleState={drizzleState} />*/}
+                <RegisterCopyrighter setRegistered={setRegistered} drizzle={drizzle} drizzleState={drizzleState} />
             </div>
         );
     }

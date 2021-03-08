@@ -7,35 +7,48 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Blog from 'load/Blog';
 import Loading from 'load/Loading';
-const drizzle = new Drizzle(drizzleOptions);
+import {useSelector} from 'react-redux';
+
+
 
 const App = () => {
-  let a = 1;
-  console.log(drizzle);
+  const menu = useSelector(state => state.index.menu);
+  switch(menu){
+    case 0 :
+      return (
+        <Blog />
+      );
+    case 1 :
+      const drizzle = new Drizzle(drizzleOptions);
+      return (
+        <DrizzleContext.Provider drizzle={drizzle}>
+          <DrizzleContext.Consumer>
+            {drizzleContext => {
+              if (typeof window.ethereum === 'undefined') {
+                return(
+                  <Loading drizzle={drizzle} drizzleState={drizzleState}/>
+                );
+              }
+              const { drizzle, drizzleState, initialized } = drizzleContext
 
-  if(a == 1){
-    return(<Blog />);
-  }
-  else {
-    return (
-      <DrizzleContext.Provider drizzle={drizzle}>
-        <DrizzleContext.Consumer>
-          {drizzleContext => {
-            const { drizzle, drizzleState, initialized } = drizzleContext
-
-            if (!initialized) {
-              return(
-                <Loading />
-              );
-            }
-            return(
+              if (!initialized) {
+                return(
+                  <Loading drizzle={drizzle} drizzleState={drizzleState}/>
+                );
+              }
               
-              <Content drizzle={drizzle} drizzleState={drizzleState} />
-            )
-          }}
-        </DrizzleContext.Consumer>
-      </DrizzleContext.Provider>
-    );
+              return(
+                
+                <Content drizzle={drizzle} drizzleState={drizzleState} />
+              )
+            }}
+          </DrizzleContext.Consumer>
+        </DrizzleContext.Provider>
+      );
+      default :
+      return (
+        <Blog />
+      );
   }
 }
 

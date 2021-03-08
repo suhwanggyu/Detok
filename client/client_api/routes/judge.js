@@ -16,7 +16,6 @@ router.post('/ip', function(req,res,next){
             );
 
             res.status(200).json({'ip':addresses, 'family':family});
-            console.log("address : "+addresses+family);
         }
     });
 });

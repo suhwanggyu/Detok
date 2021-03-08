@@ -47,6 +47,19 @@ class Watcher {
         let err, event;
         console.log(this.contract.events);
         if(this.saver){
+            this.contract.getPastEvents(
+                _eventName,
+                { fromBlock: "0", toBlock: "latest" },
+                (errors, events) => {
+                    for(var _event of events){
+                        this.saver.saved(_event, _actionName);
+                    }
+        
+                    if (!errors) {
+                    }
+                }
+            );
+
             this.contract.events[_eventName]((_err, _event) => {
                 this.saver.saved(_event, _actionName);
             });

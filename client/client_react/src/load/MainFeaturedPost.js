@@ -4,8 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import { SignalWifi1BarLock } from '@material-ui/icons';
-
+import {useDispatch} from 'react-redux';
+import {changeMenu} from './indexSlice.js';
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
     position: 'relative',
@@ -48,9 +48,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function MainFeaturedPost(props) {
+  const dispatch = useDispatch();
   const classes = useStyles();
   const { post } = props;
-
+  const handleClick = () => {
+    dispatch(changeMenu(1));
+  };
   return (
     <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(${post.image})` }}>
       {/* Increase the priority of the hero background image */}
@@ -62,7 +65,7 @@ export default function MainFeaturedPost(props) {
             Decentralized<br />
             Monitoring Protocol
             </div>
-            <Button className={classes.btn} variant="contained" color="secondary">
+            <Button className={classes.btn} variant="contained" color="secondary" onClick={handleClick}>
                     Let's start
             </Button>
         </Grid>

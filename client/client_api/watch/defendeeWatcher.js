@@ -18,69 +18,131 @@ function watcher(connector){
     watchRegisterDefendee(connector);
     watchJudge(connector);
 }
-const subscription = web3.eth.subscribe('logs', {
-    address: [parsed.networks[process.env.ID].address],
-    topics: null
-}, (error, blockHeader) => {
-    if (error) return console.error(error);
-    console.log('Successfully subscribed!', blockHeader);
-    console.log('Successfully subscribed!', blockHeader);
-}).on('data', (blockHeader) => {
-    console.log('data: ', blockHeader);
-});
-  
+
 function watchRegisterCopyrighter(connector){
     judge.getPastEvents(
         "RegisterCopyrighter",
-        { fromBlock: "latest", toBlock: "latest" },
-        (errors, events) => {
-            console.log(events);
+        { fromBlock: "0", toBlock: "latest" },
+        async (errors, events) => {
+            for(var event of events){
+                try{
+                    await connector.query('insert into copyrighter(`address`,`name`,`logo`) values ("' + 
+                    event.returnValues.copyrighter +'", "' + 
+                    web3.utils.toUtf8(event.returnValues.name)+ '", 1);'
+                    );
+                } catch(e){
+                    console.log("Already exist");
+                }
+            }
+
             if (!errors) {
             }
         }
     );
 
-    judge.events.RegisterCopyrighter((err,event) =>{
-        console.log("Copyrighter registering Detect!");
-        connector.query('insert into copyrighter(`address`,`name`,`logo`) values ("' + 
-        event.returnValues.copyrighter +'", "' + 
-        web3.utils.toUtf8(event.returnValues.name)+ '", 1);'
-        );
+    judge.events.RegisterCopyrighter(async (err,event) =>{
+        try{
+            console.log("Copyrighter registering Detect!");
+            await connector.query('insert into copyrighter(`address`,`name`,`logo`) values ("' + 
+                event.returnValues.copyrighter +'", "' + 
+                web3.utils.toUtf8(event.returnValues.name) + '", 1);'
+            );
+        } catch(e){
+            console.log(e);
+        }
     });
 }
 
 function watchRegisterDefendee(connector){
-    judge.events.RegisterDefendee((err,event) => {
+    judge.getPastEvents(
+        "RegisterDefendee",
+        { fromBlock: "0", toBlock: "latest" },
+        async (errors, events) => {
+            for(var event of events){
+                try{
+                    await connector.query('insert into defendee values ("' + 
+                    web3.utils.toUtf8(event.returnValues.name) + '",' + 
+                    event.returnValues.rewardAmount/(10**18) + ',' +
+                    event.returnValues.rating + ',' +
+                    event.returnValues.inspectCount + ',"","",' + 
+                    0 + ',"' + event.returnValues.copyrighterAddress
+                    + '");');
+                } catch(e){
+                    console.log("already exist");
+                }
+            }
+
+            if (!errors) {
+            }
+        }
+    );
+
+    judge.events.RegisterDefendee(async (err,event) => {
         console.log("Defendee registering Detect!");
-        connector.query('insert into defendee values ("' + 
-        web3.utils.toUtf8(event.returnValues.name) + '",' + 
-        event.returnValues.rewardAmount/(10**18) + ',' +
-        event.returnValues.rating + ',' +
-        event.returnValues.inspectCount + ',"","",' + 
-        0 + ',"' + event.returnValues.copyrighterAddress
+        await connector.query('insert into defendee values ("' + 
+            web3.utils.toUtf8(event.returnValues.name) + '",' + 
+            event.returnValues.rewardAmount/(10**18) + ',' +
+            event.returnValues.rating + ',' +
+            event.returnValues.inspectCount + ',"","",' + 
+            0 + ',"' + event.returnValues.copyrighterAddress
         + '");');
     });
 }
 
 /* TODO : report table에 기록하기 */
 async function watchJudge(connector){
+    judge.getPastEvents(
+        "Judge",
+        { fromBlock: "0", toBlock: "latest" },
+        async (errors, events) => {
+            for(var event of events){
+                try{
+                    let domain = await web3.utils.toUtf8(event.returnValues.domain);
+                    let defendeeName = await web3.utils.toUtf8(event.returnValues.defendeeName);
+                    await connector.query(
+                        'update report set judge = ' + event.returnValues.decision + ', step = 3 where domain = "' + domain +
+                        '" and defendeeName = "' + defendeeName + '";'
+                    );
+                    let [result] = await connector.query('select domain, keyword, name from reporttmp where domain="'+ domain+'" and name="'+defendeeName+'";');
+                    await connWork.query(
+                        'insert into seed values ("' + result[0]['domain']+ '","' + 
+                            result[0]['keyword'] + '","' +
+                            result[0]['name'] + '",0);'
+                    );
+                    let parse = url.parse(result[0]['domain']);
+                    let sql = 'insert into searchArea (`host`,`seed`,`keyword`) values (?,?,?)';
+                    await connWork.query(sql,[parse.hostname, result[0]['domain'], result[0]['keyword']]);
+                } catch (e) {
+                    console.log("Already exist");
+                }
+            }
+
+            if (!errors) {
+            }
+        }
+    );
+
     judge.events.Judge(async (err,event) =>{
-        console.log("Judge Detect!");
-        let domain = await web3.utils.toUtf8(event.returnValues.domain);
-        let defendeeName = await web3.utils.toUtf8(event.returnValues.defendeeName);
-        await connector.query(
-            'update report set judge = ' + event.returnValues.decision + ', step = 3 where domain = "' + domain +
-            '" and defendeeName = "' + defendeeName + '";'
-        );
-        let [result] = await connector.query('select domain, keyword, name from reporttmp where domain="'+ domain+'" and name="'+defendeeName+'";');
-        await connWork.query(
-            'insert into seed values ("' + result[0]['domain']+ '","' + 
-                result[0]['keyword'] + '","' +
-                result[0]['name'] + '",0);'
-        );
-        let parse = url.parse(result[0]['domain']);
-        let sql = 'insert into searchArea (`host`,`seed`,`keyword`) values (?,?,?)';
-        await connWork.query(sql,[parse.hostname, result[0]['domain'], result[0]['keyword']]);
+        try{
+            console.log("Judge Detect!");
+            let domain = await web3.utils.toUtf8(event.returnValues.domain);
+            let defendeeName = await web3.utils.toUtf8(event.returnValues.defendeeName);
+            await connector.query(
+                'update report set judge = ' + event.returnValues.decision + ', step = 3 where domain = "' + domain +
+                '" and defendeeName = "' + defendeeName + '";'
+            );
+            let [result] = await connector.query('select domain, keyword, name from reporttmp where domain="'+ domain+'" and name="'+defendeeName+'";');
+            await connWork.query(
+                'insert into seed values ("' + result[0]['domain']+ '","' + 
+                    result[0]['keyword'] + '","' +
+                    result[0]['name'] + '",0);'
+            );
+            let parse = url.parse(result[0]['domain']);
+            let sql = 'insert into searchArea (`host`,`seed`,`keyword`) values (?,?,?)';
+            await connWork.query(sql,[parse.hostname, result[0]['domain'], result[0]['keyword']]);
+        } catch(e){
+            console.log(e);
+        }
     });
 }
 
