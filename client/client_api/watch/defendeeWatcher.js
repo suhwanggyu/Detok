@@ -144,6 +144,7 @@ async function watchJudge(connector){
                 '" and defendeeName = "' + defendeeName + '";'
             );
             let [result] = await connector.query('select domain, keyword, name from reporttmp where domain="'+ domain+'" and name="'+defendeeName+'";');
+            console.log(result);
             await connWork.query(
                 'insert into seed values ("' + result[0]['domain']+ '","' + 
                     result[0]['keyword'] + '","' +

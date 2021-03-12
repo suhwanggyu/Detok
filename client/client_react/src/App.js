@@ -26,7 +26,7 @@ const App = () => {
             {drizzleContext => {
               if (typeof window.ethereum === 'undefined') {
                 return(
-                  <Loading drizzle={drizzle} drizzleState={drizzleState}/>
+                  <Loading/>
                 );
               }
               const { drizzle, drizzleState, initialized } = drizzleContext
