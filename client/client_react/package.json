@@ -13,6 +13,7 @@
     "bootstrap": "^4.5.0",
     "domain-ping": "^0.2.1",
     "ethers": "^5.0.5",
+    "fs": "0.0.1-security",
     "jquery": "^3.5.1",
     "markdown-to-jsx": "^7.1.1",
     "react": "^16.11.0",

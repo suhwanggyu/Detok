@@ -68,7 +68,7 @@ export default ({props}) => {
                         {props.detailed}<br/>
                         {props.rewardAmount/2 + " DFD"}
                     </Card.Text>
-                    <Button className={style.buyBtn} variant="outline-danger" onClick={(e)=>{handleClicked(); handleShow()}}>Report</Button>
+                    <Button className={style.buyBtn} variant="outline-danger" onClick={(e)=>{handleClicked(); handleShow()}}>Modify</Button>
                     </Card.Body>
 
                     <Modal show={show} onHide={handleClose}>

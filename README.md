@@ -164,6 +164,11 @@ Ropsten의 이더리움을 5 ETH 이상 필요로 하며, 30분 ~ 1시간 이상
 
 <br /><br /><br />
 
+Contract
+---------
+
+
+
 Characteristic
 -----------------
 

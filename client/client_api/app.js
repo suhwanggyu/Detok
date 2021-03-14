@@ -19,10 +19,13 @@ let judge = require('./routes/judge');
 const cors = require('cors');
 
 
-defendeeWatcher(connector);
-inspectWatcher(connector);
-reportWatcher(connector);
+const watch = () => {
+  reportWatcher(connector);
+  setTimeout(() => inspectWatcher(connector), 3000);
+  setTimeout(() => defendeeWatcher(connector), 8000);
+}
 
+watch();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

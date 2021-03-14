@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
 
 const sections = [
   { title: 'Home', url: '#' , value:0},
-  { title: 'Technology', url: '#', value:2},
   { title: 'Design', url: '#' , value:3},
   { title: 'Policy', url: '#' , value:4},
   { title: 'Developer', url: '#' , value:5}

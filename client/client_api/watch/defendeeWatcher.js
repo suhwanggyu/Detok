@@ -1,19 +1,5 @@
-var Web3 = require("web3");
 require('dotenv').config();
-var provider = new Web3.providers.WebsocketProvider(process.env.RPC);
-let web3 = new Web3(provider);
-
-provider.on('end', e => {
-    console.log('WS closed');
-    console.log('Attempting to reconnect...');
-    provider = new Web3.providers.WebsocketProvider(process.env.RPC);
-
-    provider.on('connect', function () {
-        console.log('WSS Reconnected');
-    });
-    
-    web3.setProvider(provider);
-});
+let web3 = require("./wss");
 
   
 const fs = require('fs');
@@ -109,6 +95,7 @@ async function watchJudge(connector){
         async (errors, events) => {
             for(var event of events){
                 try{
+                    console.log("Judge Detect!");
                     let domain = await web3.utils.toUtf8(event.returnValues.domain);
                     let defendeeName = await web3.utils.toUtf8(event.returnValues.defendeeName);
                     await connector.query(

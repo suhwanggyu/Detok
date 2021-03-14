@@ -1,22 +1,7 @@
 let Watcher = require('./watcher');
 let mysqlSavar = require ('./mysqlSaver');
 require('dotenv').config();
-var Web3 = require("web3");
-var provider = new Web3.providers.WebsocketProvider(process.env.RPC);
-let web3 = new Web3(provider);
-
-provider.on('end', e => {
-    console.log('WS closed');
-    console.log('Attempting to reconnect...');
-    provider = new Web3.providers.WebsocketProvider(process.env.RPC);
-
-    provider.on('connect', function () {
-        console.log('WSS Reconnected');
-    });
-    
-    web3.setProvider(provider);
-});
-
+let web3 = require("./wss");
 
 const fs = require('fs');
 const jsonfile = "./contracts/Notify.json";

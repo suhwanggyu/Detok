@@ -53,6 +53,13 @@ const options = {
         style={{width:'100%', height:'auto'}}
       />
     )},
+    c: { component:({children, ...props }) => (
+      <img
+        src={children}
+        title="Paella dish"
+        style={{width:'30%', height:'auto', margin:'1%'}}
+      />
+    )},
     p: {
       component: withStyles(styles)(({ classes, ...props }) => (
         <p className={classes.pitem}>
