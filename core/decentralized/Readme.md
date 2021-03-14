@@ -786,11 +786,15 @@ API
 **Parameters:**
 * _defendeeName `bytes32`
 
+<br/><br/>
+
 # TokenTaker
 ## holdToken
 
 **Parameters:**
 * _token `DetokToken`
+
+<br/><br/>
 
 # Compensate
 *Compensate*
