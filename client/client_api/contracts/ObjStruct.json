@@ -1,16 +1,16 @@
 {
   "contractName": "ObjStruct",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"ObjStruct\"},\"userdoc\":{\"methods\":{},\"notice\":\"Struct libray\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/ObjStruct.sol\":\"ObjStruct\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/ObjStruct.sol\":{\"keccak256\":\"0xe78b06e0c7953d78a0f6ed8e059be2a4187540f3b9271ccbf1130d4240cfcc54\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7403d17aed112cb7686aed44c052387a08d54c12dd5e29dcdeaf38888188d7df\",\"dweb:/ipfs/QmYVxSM8WBh6nrk8mB7BtUHqSWc4AV77BF5Z7ajtnNfBkp\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212201c97a29a5158c2f2ea1d31ceec3bafafb20dd4e245534cc487a1f400c155abdd64736f6c634300060a0033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212201c97a29a5158c2f2ea1d31ceec3bafafb20dd4e245534cc487a1f400c155abdd64736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"ObjStruct\"},\"userdoc\":{\"methods\":{},\"notice\":\"Struct libray\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/ObjStruct.sol\":\"ObjStruct\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/ObjStruct.sol\":{\"keccak256\":\"0xe78b06e0c7953d78a0f6ed8e059be2a4187540f3b9271ccbf1130d4240cfcc54\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7403d17aed112cb7686aed44c052387a08d54c12dd5e29dcdeaf38888188d7df\",\"dweb:/ipfs/QmYVxSM8WBh6nrk8mB7BtUHqSWc4AV77BF5Z7ajtnNfBkp\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220bdc77e3fb72a6fd81180c28a7737f968b4ab717b0106bb009cf180f11ed5d3ae64736f6c634300060a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220bdc77e3fb72a6fd81180c28a7737f968b4ab717b0106bb009cf180f11ed5d3ae64736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "140:763:11:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "140:763:11:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n\n/**\n *@title ObjStruct\n *@author Wanggyu, Suh\n *@notice Struct libray\n */\nlibrary ObjStruct {\n\n    struct Copyrighter {\n        bytes32 name;\n        bool ableCopyrighter;\n        uint256 balance;\n    }\n    \n\n    struct Defendee {\n        address payable rightOwnerAddress;\n        mapping(bytes32 => bool) blackListIP;\n        mapping(bytes32 => bool) whiteListIP;\n        bytes32 name;\n        bool ableNotify;\n        uint256 pendingEth;\n        uint256 rewardAmount;\n        uint8 inspectCount;\n        uint8 mode;\n        uint16 rate;\n        uint16 unJudged;\n    }\n\n    struct Blower {\n        address blowerAddress;\n        uint16 rate;\n        bool disabled;\n    }\n\n    struct Inspector {\n        address InspectorAddress;\n        uint16 rate;\n        bool abled;\n        uint16 winningStreak;\n        bool winningState;\n    }\n\n}",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/ObjStruct.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/ObjStruct.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/ObjStruct.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/ObjStruct.sol",
     "exportedSymbols": {
       "ObjStruct": [
         1563
@@ -763,7 +763,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/ObjStruct.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/ObjStruct.sol",
       "exportedSymbols": {
         "ObjStruct": [
           1563
@@ -1539,7 +1539,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.319Z",
+  "updatedAt": "2021-03-14T03:39:30.418Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

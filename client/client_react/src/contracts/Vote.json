@@ -1,16 +1,16 @@
 {
   "contractName": "Vote",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"Vote\"},\"userdoc\":{\"methods\":{},\"notice\":\"For fully distribution, member who use this service should have the right that can choose contract owner and developers.\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/decision/Vote.sol\":\"Vote\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/decision/Vote.sol\":{\"keccak256\":\"0x5cdfd9d070cf11a6e910ee348e29bc37bcdda974b0b1f7d465c8658cb7b1e86a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://da9b31d5bcf52a19c2d4ae18befe0f20673dc313f9730dc0a796c28ff037c37a\",\"dweb:/ipfs/QmdpjbsaWjJV3ns1CqpxZV6fyUEE4j6h8MCv3ErvBpZgkk\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122009ec7879eb98908e8738b207dc2724ee8efa4f7543fabb99ef81d0592fe218a164736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052600080fdfea264697066735822122009ec7879eb98908e8738b207dc2724ee8efa4f7543fabb99ef81d0592fe218a164736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"Vote\"},\"userdoc\":{\"methods\":{},\"notice\":\"For fully distribution, member who use this service should have the right that can choose contract owner and developers.\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/decision/Vote.sol\":\"Vote\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/decision/Vote.sol\":{\"keccak256\":\"0x5cdfd9d070cf11a6e910ee348e29bc37bcdda974b0b1f7d465c8658cb7b1e86a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://da9b31d5bcf52a19c2d4ae18befe0f20673dc313f9730dc0a796c28ff037c37a\",\"dweb:/ipfs/QmdpjbsaWjJV3ns1CqpxZV6fyUEE4j6h8MCv3ErvBpZgkk\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122087ff5b0f8796ed3ab4145112de26304c6d772ff7f8c31994909b2e7983efebc564736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122087ff5b0f8796ed3ab4145112de26304c6d772ff7f8c31994909b2e7983efebc564736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "244:17:6:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "244:17:6:-:0;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n/**\n *@title Vote\n *@author Wanggyu, Suh\n *@notice For fully distribution, member who use this service should have the right that can choose contract owner and\n * developers.\n */\ncontract Vote{\n\n}",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/decision/Vote.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/decision/Vote.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/decision/Vote.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/decision/Vote.sol",
     "exportedSymbols": {
       "Vote": [
         1426
@@ -61,7 +61,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/decision/Vote.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/decision/Vote.sol",
       "exportedSymbols": {
         "Vote": [
           1426
@@ -131,7 +131,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.312Z",
+  "updatedAt": "2021-03-14T03:39:30.379Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

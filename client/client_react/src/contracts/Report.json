@@ -1,16 +1,16 @@
 {
   "contractName": "Report",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"ObjStruct\"},\"userdoc\":{\"methods\":{},\"notice\":\"Report library\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/Report.sol\":\"Report\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/Report.sol\":{\"keccak256\":\"0xcbed221987383d11a63d005c2ad011a8c7eb546a98bae22e40237f6510055492\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a6baac219536d64137c8ff15146bcbeee5197812fc77adc7076e0483fe489ad0\",\"dweb:/ipfs/QmQ7PdZjqBrCkNFSW5P7wDaG4k16uiBFJNhKk2xpspHsHm\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122021ba736493ac75d78ae3895546e41eaa00d7d2d160d620f8ba195f7ba380d75564736f6c634300060a0033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122021ba736493ac75d78ae3895546e41eaa00d7d2d160d620f8ba195f7ba380d75564736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"ObjStruct\"},\"userdoc\":{\"methods\":{},\"notice\":\"Report library\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/Report.sol\":\"Report\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/Report.sol\":{\"keccak256\":\"0xcbed221987383d11a63d005c2ad011a8c7eb546a98bae22e40237f6510055492\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a6baac219536d64137c8ff15146bcbeee5197812fc77adc7076e0483fe489ad0\",\"dweb:/ipfs/QmQ7PdZjqBrCkNFSW5P7wDaG4k16uiBFJNhKk2xpspHsHm\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206faca7d84dbee6b64a4e97b9d505ecc1d0fb9e1cea058dfebd48dd26b78e0ab164736f6c634300060a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206faca7d84dbee6b64a4e97b9d505ecc1d0fb9e1cea058dfebd48dd26b78e0ab164736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "141:2287:13:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "141:2287:13:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n\n/**\n *@title ObjStruct\n *@author Wanggyu, Suh\n *@notice Report library\n */\nlibrary Report {\n    struct InspectorsDecision{\n        bool decision;\n        bool checkInspect;\n    }\n\n    struct LinkMetaData{\n        bytes32 name;\n        bytes32 domain;\n    }\n\n    struct Link{\n        bytes domain;\n        bytes32 defendeeName;\n        uint16 inspectApprove;\n        uint16 inspectDeny;\n        bool judge;\n        bool inspect;\n        bool disabled;\n        uint8 step;\n        bytes32 ip;\n        address payable reporterAddress;\n        mapping(address => InspectorsDecision) inspectDecisions;\n        mapping(uint8 => address payable) listOfInspectors;\n        uint8 numberOfInspectors;\n        mapping(uint8 => uint256) usedFee;\n        uint256 reporterFee;\n    }\n    /* TODO : domain will type bytes -> bytes32 */\n    function makeMetaDataForLink(bytes32 _name, bytes memory _domain) internal pure returns (bytes32){\n        bytes32 domain = keccak256(_domain);\n        bytes memory result = new bytes(64);\n        bytes memory tmp = new bytes(32);\n        assembly{\n            mstore(add(tmp, 32), _name)\n        }\n        bytes32 name = keccak256(tmp);\n        assembly{\n            mstore(add(result, 32), name)\n            mstore(add(result, 64), domain)\n        }\n        return keccak256(result);\n    }\n\n    function checkReInspect(address target, mapping(address => bool) storage list) internal view returns (bool){\n        return list[target];\n    }\n\n    function makeNewLink\n    (\n        bytes memory _domain,\n        bytes32 _defendeeName,\n        address payable msgsender,\n        bytes32 _ip\n    )\n        internal pure returns (Link memory)\n    {\n        return Link({\n            domain:_domain,\n            defendeeName:_defendeeName,\n            disabled:false,\n            reporterAddress:msgsender,\n            inspectApprove:0,\n            inspectDeny:0,\n            ip:_ip,\n            judge:false,\n            numberOfInspectors:0,\n            inspect:false,\n            step:1,\n            reporterFee:0\n        });\n    }\n\n    function checkBlackList(bytes memory _list, bytes memory _target) internal pure returns (bool){\n        uint256 blackLength = _list.length;\n\n        for (uint256 i = 0; i < blackLength; i++) {\n            if ( _list[i]^_target[i]=='1')\n                return false;\n        }\n        return true;\n    }\n}",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/Report.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/Report.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/Report.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/Report.sol",
     "exportedSymbols": {
       "Report": [
         1891
@@ -2632,7 +2632,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/Report.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/Report.sol",
       "exportedSymbols": {
         "Report": [
           1891
@@ -5235,7 +5235,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.327Z",
+  "updatedAt": "2021-03-14T03:39:30.445Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

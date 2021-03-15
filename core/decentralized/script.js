@@ -45,7 +45,7 @@ module.exports = async function(callback) {
     let multi9 = web3.utils.fromUtf8("Believer");
     let multi10 = web3.utils.fromUtf8("Zootopia");
     let multi11 = web3.utils.fromUtf8("Three meals5");
-    let val = await web3.utils.toWei("0.3", "ether");
+    let val = await web3.utils.toWei("0.21", "ether");
     let val2 = "1000000000000000000000";
     let val3 = "6700000000000000000000";
     let val4 = "120000000000000000000";
@@ -68,7 +68,7 @@ module.exports = async function(callback) {
     await jud.registerDefendee(multi11, val, val7, 3, {from:acc[4], value : val});
 
  
-    val = await web3.utils.toWei("0.3","ether")
+    val = await web3.utils.toWei("0.21","ether")
     val2 = "100000000000000000000"
     val3 = "120000000000000000000"
     val4 = "130000000000000000000"

@@ -48,16 +48,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"last_completed_migration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"completed\",\"type\":\"uint256\"}],\"name\":\"setCompleted\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/Migrations.sol\":\"Migrations\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/Migrations.sol\":{\"keccak256\":\"0xe04e2fb3d39d415aa4d2368410c1e9f8937cdda2d99d2e412cb45b9d13ce9ec8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://db986a7934528a7c97f35685a115dbc98af9c3f56ea049deab5c47e8543804a1\",\"dweb:/ipfs/QmRACrDoyh9BMeGP5nr1f9k7bbHsLnQ85HiVKvbPGx9KFW\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b0319163317905560fd806100316000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063445df0ac1460415780638da5cb5b146059578063fdacd57614607b575b600080fd5b60476097565b60408051918252519081900360200190f35b605f609d565b604080516001600160a01b039092168252519081900360200190f35b609560048036036020811015608f57600080fd5b503560ac565b005b60015481565b6000546001600160a01b031681565b6000546001600160a01b031633141560c45760018190555b5056fea2646970667358221220262adf298193efb73fb26daa4628313d3aa8e19ab922d42bf39023a9a5b4a5ef64736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063445df0ac1460415780638da5cb5b146059578063fdacd57614607b575b600080fd5b60476097565b60408051918252519081900360200190f35b605f609d565b604080516001600160a01b039092168252519081900360200190f35b609560048036036020811015608f57600080fd5b503560ac565b005b60015481565b6000546001600160a01b031681565b6000546001600160a01b031633141560c45760018190555b5056fea2646970667358221220262adf298193efb73fb26daa4628313d3aa8e19ab922d42bf39023a9a5b4a5ef64736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"last_completed_migration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"completed\",\"type\":\"uint256\"}],\"name\":\"setCompleted\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/Migrations.sol\":\"Migrations\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/Migrations.sol\":{\"keccak256\":\"0xe04e2fb3d39d415aa4d2368410c1e9f8937cdda2d99d2e412cb45b9d13ce9ec8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://db986a7934528a7c97f35685a115dbc98af9c3f56ea049deab5c47e8543804a1\",\"dweb:/ipfs/QmRACrDoyh9BMeGP5nr1f9k7bbHsLnQ85HiVKvbPGx9KFW\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b0319163317905560fd806100316000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063445df0ac1460415780638da5cb5b146059578063fdacd57614607b575b600080fd5b60476097565b60408051918252519081900360200190f35b605f609d565b604080516001600160a01b039092168252519081900360200190f35b609560048036036020811015608f57600080fd5b503560ac565b005b60015481565b6000546001600160a01b031681565b6000546001600160a01b031633141560c45760018190555b5056fea2646970667358221220adc957b9b04054534bdc1d73e526f7cdcfad9a1e181d0ff79b2511d8b45fbec164736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063445df0ac1460415780638da5cb5b146059578063fdacd57614607b575b600080fd5b60476097565b60408051918252519081900360200190f35b605f609d565b604080516001600160a01b039092168252519081900360200190f35b609560048036036020811015608f57600080fd5b503560ac565b005b60015481565b6000546001600160a01b031681565b6000546001600160a01b031633141560c45760018190555b5056fea2646970667358221220adc957b9b04054534bdc1d73e526f7cdcfad9a1e181d0ff79b2511d8b45fbec164736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "66:311:2:-:0;;;155:50;;;;;;;;;-1:-1:-1;182:5:2;:18;;-1:-1:-1;;;;;;182:18:2;190:10;182:18;;;66:311;;;;;;",
   "deployedSourceMap": "66:311:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;114:36;;;:::i;:::-;;;;;;;;;;;;;;;;90:20;;;:::i;:::-;;;;-1:-1:-1;;;;;90:20:2;;;;;;;;;;;;;;272:103;;;;;;;;;;;;;;;;-1:-1:-1;272:103:2;;:::i;:::-;;114:36;;;;:::o;90:20::-;;;-1:-1:-1;;;;;90:20:2;;:::o;272:103::-;255:5;;-1:-1:-1;;;;;255:5:2;241:10;:19;237:26;;;334:24:::1;:36:::0;;;237:26;272:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n\ncontract Migrations {\n  address public owner;\n  uint public last_completed_migration;\n\n  constructor() public {\n    owner = msg.sender;\n  }\n\n  modifier restricted() {\n    if (msg.sender == owner) _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/Migrations.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/Migrations.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/Migrations.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/Migrations.sol",
     "exportedSymbols": {
       "Migrations": [
         775
@@ -484,7 +484,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/Migrations.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/Migrations.sol",
       "exportedSymbols": {
         "Migrations": [
           775
@@ -984,8 +984,8 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0xfe6B91e2Ec2C7c726e3100fBfccD44144aF9E00B",
-      "transactionHash": "0xb84003f4e6ecd44d22f7e6f53dc2c0824ffcdb21aa4a84e04903b8aa8320d1f2"
+      "address": "0xbC221FAbf4B4c2a00B9FD2ADBf0cE437100c76Aa",
+      "transactionHash": "0x84c062329717fe2192e42fe034425281515539c6868b2d1e2e4bc63552dc6b03"
     },
     "5777": {
       "events": {},
@@ -1049,7 +1049,7 @@
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:25:15.586Z",
+  "updatedAt": "2021-03-14T03:46:49.964Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

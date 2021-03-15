@@ -46,16 +46,16 @@
       "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"decision\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"}],\"name\":\"Inspect\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"}],\"name\":\"RegisterInspector\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"InspectEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about inspect process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol\":\"InspectEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol\":{\"keccak256\":\"0x9951a9a016e038b420945114a9097556e850bc032279ad6dc6c59dbbb0d8ea52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c35f4b589c94fa590237331679195741e0dda0a71544087aa1fe1b615fb3d468\",\"dweb:/ipfs/QmcWsuRvKoqbatzakJAm9CSaYaDTrrYz55fQ4VoXi39DVF\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205d587cdca2195abb283040523984ecb6e209a412e4818d40cf2cab4f19aab95f64736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052600080fdfea26469706673582212205d587cdca2195abb283040523984ecb6e209a412e4818d40cf2cab4f19aab95f64736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"decision\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"}],\"name\":\"Inspect\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"inspector\",\"type\":\"address\"}],\"name\":\"RegisterInspector\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"InspectEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about inspect process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/InspectEvents.sol\":\"InspectEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/InspectEvents.sol\":{\"keccak256\":\"0x9951a9a016e038b420945114a9097556e850bc032279ad6dc6c59dbbb0d8ea52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c35f4b589c94fa590237331679195741e0dda0a71544087aa1fe1b615fb3d468\",\"dweb:/ipfs/QmcWsuRvKoqbatzakJAm9CSaYaDTrrYz55fQ4VoXi39DVF\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122002dae9e10ee13ca0bbf1cb090047fae3aa47b65d8691e7b5c6e5e4f22360fa5264736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122002dae9e10ee13ca0bbf1cb090047fae3aa47b65d8691e7b5c6e5e4f22360fa5264736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "158:216:7:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "158:216:7:-:0;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n\n/**\n *@title InspectEvents\n *@author Wanggyu, Suh\n *@notice Event about inspect process\n */\ncontract InspectEvents {\n    event Inspect(\n        address inspector,\n        bool decision,\n        bytes domain,\n        bytes32 defendeeName\n    );\n\n    event RegisterInspector(\n        address inspector\n    );\n}",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/InspectEvents.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/InspectEvents.sol",
     "exportedSymbols": {
       "InspectEvents": [
         1444
@@ -284,7 +284,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/InspectEvents.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/InspectEvents.sol",
       "exportedSymbols": {
         "InspectEvents": [
           1444
@@ -536,7 +536,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.314Z",
+  "updatedAt": "2021-03-14T03:39:30.397Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

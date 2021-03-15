@@ -1,16 +1,16 @@
 {
   "contractName": "IPAddress",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Better way is control ip address at out of chain It will be removed\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/IPAddress.sol\":\"IPAddress\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/IPAddress.sol\":{\"keccak256\":\"0x53f60dc1c9ca9effec6cc556ef130c4bca9cc4b59af0d7b7b5293a9df302df7a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6f2ad2f2b8d2ee609cd5511c121ca66d0e158409b54087aad52492ff086754c3\",\"dweb:/ipfs/QmXFtDfDTmF3Ext2P1iKgwdzu3xEgoygXLfXoincExGv4R\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212209438a91d1c7af96bbe1b6ddda5c7d6341a3fea07970f8fa7a16315eb9cdc826664736f6c634300060a0033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212209438a91d1c7af96bbe1b6ddda5c7d6341a3fea07970f8fa7a16315eb9cdc826664736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Better way is control ip address at out of chain It will be removed\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/IPAddress.sol\":\"IPAddress\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/IPAddress.sol\":{\"keccak256\":\"0x53f60dc1c9ca9effec6cc556ef130c4bca9cc4b59af0d7b7b5293a9df302df7a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6f2ad2f2b8d2ee609cd5511c121ca66d0e158409b54087aad52492ff086754c3\",\"dweb:/ipfs/QmXFtDfDTmF3Ext2P1iKgwdzu3xEgoygXLfXoincExGv4R\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122072d3bc239d83209e1050e90b3b6e3d79c343e94579f6ce18adead214837dc2c864736f6c634300060a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122072d3bc239d83209e1050e90b3b6e3d79c343e94579f6ce18adead214837dc2c864736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "151:124:10:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "151:124:10:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n\n/**\n *@dev Better way is control ip address at out of chain\n *It will be removed\n */\nlibrary IPAddress {\n    struct IP {\n        /* True : IPv4, False : IPv6 */\n        bool family;\n        bytes32 ip;\n    }\n}\n\n",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/IPAddress.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/IPAddress.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/IPAddress.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/IPAddress.sol",
     "exportedSymbols": {
       "IPAddress": [
         1507
@@ -129,7 +129,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/library/IPAddress.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/IPAddress.sol",
       "exportedSymbols": {
         "IPAddress": [
           1507
@@ -265,7 +265,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.317Z",
+  "updatedAt": "2021-03-14T03:39:30.416Z",
   "devdoc": {
     "details": "Better way is control ip address at out of chain It will be removed",
     "methods": {}

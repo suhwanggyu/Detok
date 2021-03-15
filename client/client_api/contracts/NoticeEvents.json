@@ -58,16 +58,16 @@
       "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"Reporting\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"addingBlackList\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"JudgeEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about Report process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol\":\"NoticeEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol\":{\"keccak256\":\"0x0d8085223d00cc93a67bd3b21485c74d4d53a584c739d7f7ce7cae7ae142b151\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa4b0b1582dded99554f34d08416691d39aef7ce729bc5eb5897921342842ebc\",\"dweb:/ipfs/QmPCy24vFMTyKQuQm3hWwdKSson4viJ7ei69W6wWbxbCzq\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220824f5d51cd220939680dd42b181115dca6f4e3305aa8317419743212773ef55a64736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220824f5d51cd220939680dd42b181115dca6f4e3305aa8317419743212773ef55a64736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"Reporting\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"ip\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"reporterAddress\",\"type\":\"address\"}],\"name\":\"addingBlackList\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"JudgeEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about Report process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/NoticeEvents.sol\":\"NoticeEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/NoticeEvents.sol\":{\"keccak256\":\"0x0d8085223d00cc93a67bd3b21485c74d4d53a584c739d7f7ce7cae7ae142b151\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa4b0b1582dded99554f34d08416691d39aef7ce729bc5eb5897921342842ebc\",\"dweb:/ipfs/QmPCy24vFMTyKQuQm3hWwdKSson4viJ7ei69W6wWbxbCzq\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e831a0e46b7ecef7fb2915c6b5ad3da3a1377096b738170e67ae972ff17706eb64736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220e831a0e46b7ecef7fb2915c6b5ad3da3a1377096b738170e67ae972ff17706eb64736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "154:278:9:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "154:278:9:-:0;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n/**\n *@title JudgeEvents\n *@author Wanggyu, Suh\n *@notice Event about Report process\n */\ncontract NoticeEvents {\n    event Reporting(\n        bytes domain,\n        bytes32 defendeeName,\n        bytes32 ip,\n        address reporterAddress\n    );\n    \n    event addingBlackList(\n        bytes32 defendeeName,\n        bytes32 ip,\n        address reporterAddress\n    );\n}",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
     "exportedSymbols": {
       "NoticeEvents": [
         1498
@@ -354,7 +354,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/NoticeEvents.sol",
       "exportedSymbols": {
         "NoticeEvents": [
           1498
@@ -664,7 +664,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.316Z",
+  "updatedAt": "2021-03-14T03:39:30.399Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

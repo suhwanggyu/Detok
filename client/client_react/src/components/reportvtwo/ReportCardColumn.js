@@ -72,7 +72,6 @@ export default ({ drizzle, drizzleState }) => {
             <Navbar className={style.naviReport} bg="light" variant="light">
                     <Nav className="mr-auto">
                         <Nav.Link className={key === 1 ? 'active' : ''} onClick={()=>setKey(1)}>ALL</Nav.Link>
-                        <Nav.Link className={key === 2 ? 'active' : ''} onClick={()=>setKey(2)}>Follow</Nav.Link>
                         <Nav.Link className={key === 3 ? 'active' : ''} onClick={()=>setKey(3)}>Hot</Nav.Link>
                     </Nav>
                     <Form inline>

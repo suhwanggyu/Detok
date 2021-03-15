@@ -21,16 +21,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_target\",\"type\":\"address\"}],\"name\":\"getRate\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"RateInspector\"},\"userdoc\":{\"methods\":{},\"notice\":\"Connector with rating database contract\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/rate/RateInspector.sol\":\"RateInspector\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/ObjStruct.sol\":{\"keccak256\":\"0xe78b06e0c7953d78a0f6ed8e059be2a4187540f3b9271ccbf1130d4240cfcc54\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7403d17aed112cb7686aed44c052387a08d54c12dd5e29dcdeaf38888188d7df\",\"dweb:/ipfs/QmYVxSM8WBh6nrk8mB7BtUHqSWc4AV77BF5Z7ajtnNfBkp\"]},\"/home/ubuntu/detok/Detok/core/decentralized/contracts/library/Report.sol\":{\"keccak256\":\"0xcbed221987383d11a63d005c2ad011a8c7eb546a98bae22e40237f6510055492\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a6baac219536d64137c8ff15146bcbeee5197812fc77adc7076e0483fe489ad0\",\"dweb:/ipfs/QmQ7PdZjqBrCkNFSW5P7wDaG4k16uiBFJNhKk2xpspHsHm\"]},\"/home/ubuntu/detok/Detok/core/decentralized/contracts/math/SafeMathuint.sol\":{\"keccak256\":\"0xa6b1cc90f23469e24e8925cc4e63a85d532d0421dd0fbd6bcfb4fa80ec5176b8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d7288906dfd3efddc90c38db5be4d90c8f90a6a0cd2d66ce7ff71a583371447b\",\"dweb:/ipfs/QmaBduRqitJbrGrHPEfkaUdr5y2notmbUXVSQrUE9JvGR3\"]},\"/home/ubuntu/detok/Detok/core/decentralized/contracts/rate/RateInspector.sol\":{\"keccak256\":\"0xbac7e411c25ce64101dfda503827297ccecb47f5348d1dd096e1c08a166eb730\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ec9baba6211c6f694852c3859b13f94d428a5f5bdb95526670c38288552bd702\",\"dweb:/ipfs/Qmd3rY3hfWSxqgmM5Z4BnGJzMTdGgMvF5dxWsmubWm9WGs\"]},\"/home/ubuntu/detok/Detok/core/decentralized/contracts/storeContract/InspectData.sol\":{\"keccak256\":\"0xc2ff6a7085e18bb8816ab24a65ec57850c57ce72b3a80855ea3d115a25fdacfc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4cae2dadb8618ccb0d1e482e35a59a6c410af15b66ae6747c443a64018067a46\",\"dweb:/ipfs/QmQimcFJjyPVsHc7JSJ931uHyq9ednmL5hSbJKFXYVHi4e\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061011a806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806337cef79114602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166067565b6040805161ffff9092168252519081900360200190f35b60008054604080516337cef79160e01b81526001600160a01b038581166004830152915191909216916337cef791916024808301926020929190829003018186803b15801560b457600080fd5b505afa15801560c7573d6000803e3d6000fd5b505050506040513d602081101560dc57600080fd5b50519291505056fea2646970667358221220aaa3e22122374cbab01a5b5043a8e1242175432ed7e9c011b24938f727e9796f64736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806337cef79114602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166067565b6040805161ffff9092168252519081900360200190f35b60008054604080516337cef79160e01b81526001600160a01b038581166004830152915191909216916337cef791916024808301926020929190829003018186803b15801560b457600080fd5b505afa15801560c7573d6000803e3d6000fd5b505050506040513d602081101560dc57600080fd5b50519291505056fea2646970667358221220aaa3e22122374cbab01a5b5043a8e1242175432ed7e9c011b24938f727e9796f64736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_target\",\"type\":\"address\"}],\"name\":\"getRate\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"RateInspector\"},\"userdoc\":{\"methods\":{},\"notice\":\"Connector with rating database contract\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/rate/RateInspector.sol\":\"RateInspector\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/ObjStruct.sol\":{\"keccak256\":\"0xe78b06e0c7953d78a0f6ed8e059be2a4187540f3b9271ccbf1130d4240cfcc54\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7403d17aed112cb7686aed44c052387a08d54c12dd5e29dcdeaf38888188d7df\",\"dweb:/ipfs/QmYVxSM8WBh6nrk8mB7BtUHqSWc4AV77BF5Z7ajtnNfBkp\"]},\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/library/Report.sol\":{\"keccak256\":\"0xcbed221987383d11a63d005c2ad011a8c7eb546a98bae22e40237f6510055492\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a6baac219536d64137c8ff15146bcbeee5197812fc77adc7076e0483fe489ad0\",\"dweb:/ipfs/QmQ7PdZjqBrCkNFSW5P7wDaG4k16uiBFJNhKk2xpspHsHm\"]},\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/math/SafeMathuint.sol\":{\"keccak256\":\"0xa6b1cc90f23469e24e8925cc4e63a85d532d0421dd0fbd6bcfb4fa80ec5176b8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d7288906dfd3efddc90c38db5be4d90c8f90a6a0cd2d66ce7ff71a583371447b\",\"dweb:/ipfs/QmaBduRqitJbrGrHPEfkaUdr5y2notmbUXVSQrUE9JvGR3\"]},\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/rate/RateInspector.sol\":{\"keccak256\":\"0xbac7e411c25ce64101dfda503827297ccecb47f5348d1dd096e1c08a166eb730\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ec9baba6211c6f694852c3859b13f94d428a5f5bdb95526670c38288552bd702\",\"dweb:/ipfs/Qmd3rY3hfWSxqgmM5Z4BnGJzMTdGgMvF5dxWsmubWm9WGs\"]},\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/storeContract/InspectData.sol\":{\"keccak256\":\"0xc2ff6a7085e18bb8816ab24a65ec57850c57ce72b3a80855ea3d115a25fdacfc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4cae2dadb8618ccb0d1e482e35a59a6c410af15b66ae6747c443a64018067a46\",\"dweb:/ipfs/QmQimcFJjyPVsHc7JSJ931uHyq9ednmL5hSbJKFXYVHi4e\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061011a806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806337cef79114602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166067565b6040805161ffff9092168252519081900360200190f35b60008054604080516337cef79160e01b81526001600160a01b038581166004830152915191909216916337cef791916024808301926020929190829003018186803b15801560b457600080fd5b505afa15801560c7573d6000803e3d6000fd5b505050506040513d602081101560dc57600080fd5b50519291505056fea2646970667358221220f4ad74b71d255b0a7c9a255681bb2e6ed7b147029c24454d3efd8cb18413bb7964736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806337cef79114602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166067565b6040805161ffff9092168252519081900360200190f35b60008054604080516337cef79160e01b81526001600160a01b038581166004830152915191909216916337cef791916024808301926020929190829003018186803b15801560b457600080fd5b505afa15801560c7573d6000803e3d6000fd5b505050506040513d602081101560dc57600080fd5b50519291505056fea2646970667358221220f4ad74b71d255b0a7c9a255681bb2e6ed7b147029c24454d3efd8cb18413bb7964736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "215:767:16:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "215:767:16:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;283:120;;;;;;;;;;;;;;;;-1:-1:-1;283:120:16;-1:-1:-1;;;;;283:120:16;;:::i;:::-;;;;;;;;;;;;;;;;;;;;338:6;363:16;;:33;;;-1:-1:-1;;;363:33:16;;-1:-1:-1;;;;;363:33:16;;;;;;;;;:16;;;;;:24;;:33;;;;;;;;;;;;;;:16;:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;363:33:16;;283:120;-1:-1:-1;;283:120:16:o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.4.21 <0.7.0;\n\nimport '../storeContract/InspectData.sol';\n/**\n *@title RateInspector\n *@author  Wanggyu, Suh\n *@notice Connector with rating database contract\n */\ncontract RateInspector {\n    InspectData inspertorStorage;\n    \n    function getRate(address _target) public view returns (uint16) {\n        return inspertorStorage.getRate(_target);\n    }\n\n    function increaseRate(address _targetAddress) internal {\n        inspertorStorage.setWinning(_targetAddress, true, false);\n    }\n\n    function decreaseRate(address _targetAddress) internal returns (bool) {\n        inspertorStorage.setWinning(_targetAddress, false, false);\n    }\n\n    function increaseRateForDenySecond(address _targetAddress) internal {\n        inspertorStorage.setWinning(_targetAddress, true, true);\n    }\n\n    function decreaseRateForDenySecond(address _targetAddress) internal {\n        inspertorStorage.setWinning(_targetAddress, false, true);\n    }\n}",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/rate/RateInspector.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/rate/RateInspector.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/rate/RateInspector.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/rate/RateInspector.sol",
     "exportedSymbols": {
       "RateInspector": [
         2210
@@ -55,7 +55,7 @@
         "src": "33:32:16"
       },
       {
-        "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/storeContract/InspectData.sol",
+        "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/storeContract/InspectData.sol",
         "file": "../storeContract/InspectData.sol",
         "id": 2135,
         "nodeType": "ImportDirective",
@@ -1034,7 +1034,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/rate/RateInspector.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/rate/RateInspector.sol",
       "exportedSymbols": {
         "RateInspector": [
           2210
@@ -1062,7 +1062,7 @@
       {
         "attributes": {
           "SourceUnit": 3321,
-          "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/storeContract/InspectData.sol",
+          "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/storeContract/InspectData.sol",
           "file": "../storeContract/InspectData.sol",
           "scope": 2211,
           "symbolAliases": [
@@ -2136,7 +2136,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.340Z",
+  "updatedAt": "2021-03-14T03:39:30.473Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},

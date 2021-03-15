@@ -89,16 +89,16 @@
       "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"decision\",\"type\":\"bool\"}],\"name\":\"Judge\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"copyrighter\",\"type\":\"address\"}],\"name\":\"RegisterCopyrighter\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"pendingEth\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"rewardAmount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"inspectCount\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint16\",\"name\":\"rating\",\"type\":\"uint16\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"copyrighterAddress\",\"type\":\"address\"}],\"name\":\"RegisterDefendee\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"JudgeEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about Judge process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/JudgeEvents.sol\":\"JudgeEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/detok/Detok/core/decentralized/contracts/events/JudgeEvents.sol\":{\"keccak256\":\"0x5851b63d2fb18bc09e33bacb3845729df87724b091bba0df7b02ebbaec191e5a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0922c0c999ef79769174b48ac340f9aab83eead159cc2293dcbd548f0ef2bf82\",\"dweb:/ipfs/QmPriDDJCAwzv7ax8UCvunozYmnbcMVMEdQBksDGoEbMES\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122027aea959ec89881f1e5f783ca25f33e0fbcfebbf455ecf5b01574d0b98619b5664736f6c634300060a0033",
-  "deployedBytecode": "0x6080604052600080fdfea264697066735822122027aea959ec89881f1e5f783ca25f33e0fbcfebbf455ecf5b01574d0b98619b5664736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"domain\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"defendeeName\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"decision\",\"type\":\"bool\"}],\"name\":\"Judge\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"copyrighter\",\"type\":\"address\"}],\"name\":\"RegisterCopyrighter\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"pendingEth\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"rewardAmount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"inspectCount\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint16\",\"name\":\"rating\",\"type\":\"uint16\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"copyrighterAddress\",\"type\":\"address\"}],\"name\":\"RegisterDefendee\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"methods\":{},\"title\":\"JudgeEvents\"},\"userdoc\":{\"methods\":{},\"notice\":\"Event about Judge process\"}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/JudgeEvents.sol\":\"JudgeEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/JudgeEvents.sol\":{\"keccak256\":\"0x5851b63d2fb18bc09e33bacb3845729df87724b091bba0df7b02ebbaec191e5a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0922c0c999ef79769174b48ac340f9aab83eead159cc2293dcbd548f0ef2bf82\",\"dweb:/ipfs/QmPriDDJCAwzv7ax8UCvunozYmnbcMVMEdQBksDGoEbMES\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122051c5b2bd3eb1dddbd92c3dad1f862b30ab771e589f8d9ca5fab13900451ae95564736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122051c5b2bd3eb1dddbd92c3dad1f862b30ab771e589f8d9ca5fab13900451ae95564736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "153:413:8:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "153:413:8:-:0;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n/**\n *@title JudgeEvents\n *@author Wanggyu, Suh\n *@notice Event about Judge process\n */\ncontract JudgeEvents {\n    event RegisterCopyrighter(\n        bytes32 name,\n        address copyrighter\n    );\n\n    event RegisterDefendee(\n        bytes32 name,\n        uint256 pendingEth,\n        uint256 rewardAmount,\n        uint8 inspectCount,\n        uint16 rating,\n        address copyrighterAddress\n    );\n\n    event Judge(\n        bytes domain,\n        bytes32 defendeeName,\n        bool decision\n    );\n}",
-  "sourcePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/JudgeEvents.sol",
+  "sourcePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/JudgeEvents.sol",
   "ast": {
-    "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/JudgeEvents.sol",
+    "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/JudgeEvents.sol",
     "exportedSymbols": {
       "JudgeEvents": [
         1476
@@ -516,7 +516,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ubuntu/detok/Detok/core/decentralized/contracts/events/JudgeEvents.sol",
+      "absolutePath": "/home/ubuntu/workspace/Detok/core/decentralized/contracts/events/JudgeEvents.sol",
       "exportedSymbols": {
         "JudgeEvents": [
           1476
@@ -961,7 +961,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-07T12:14:13.315Z",
+  "updatedAt": "2021-03-14T03:39:30.398Z",
   "devdoc": {
     "author": "Wanggyu, Suh",
     "methods": {},
