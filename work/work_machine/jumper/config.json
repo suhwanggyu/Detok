@@ -8,8 +8,8 @@
         "keywords":["왕좌의 게임"]
     },
     "db":{
-        "user":"mize159",
-        "passwd":"ahdk2424159!",
+        "user":"root",
+        "passwd":"abc123!@!",
         "host":"localhost",
         "db":"work",
         "charset":"utf8"
