@@ -27,7 +27,7 @@ export default ({props, drizzle, drizzleState }) => {
                             <span className="sr-only">unread messages</span>
                             </Button>
                         </OverlayTrigger><br/>
-                        {"Reward : " + props.rewardAmount + " DFD"}<br/>
+                        {"Reward : " + props.rewardAmount + " DTK"}<br/>
                         Step : <Badge pill variant={randBadge[props.step]}>{procedure[props.step]}</Badge>
                     </Card.Text>
                     </Card.Body>

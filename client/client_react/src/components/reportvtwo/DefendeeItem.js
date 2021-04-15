@@ -94,7 +94,7 @@ export default ({props, drizzle, drizzleState }) => {
                     <Card.Text className={style.cardText}>
                         <Badge pill variant={randBadge[props.logo]}>{props.copyrighterName}</Badge><br/>
                         {props.detailed}<br/>
-                        {props.rewardAmount/2 + " DFD"}
+                        {props.rewardAmount/2 + " DTK"}
                     </Card.Text>
                     <Button className={style.buyBtn} variant="outline-danger" onClick={(e)=>{handleClicked();handleShow()}}>Report</Button>
                     </Card.Body>

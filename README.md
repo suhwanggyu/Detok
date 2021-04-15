@@ -5,21 +5,10 @@
 
 
 </h1>
-<div align="center">
 
 
-
-</div>
-
-> 주의 <br />
-컨트렉트 디렉토리의 secrets.json의 메모닉은 공유되는 메모닉입니다.<br />
-전체 빌드를 위한 faucet을 소유하기 위한 기간이 3일 이상 소요되므로<br />
-체험을 위해 공개됩니다. <br/>
-따라서, "절대" 해당 계정을 지갑을 복원하는 것에 사용하거나, <br />
-실제 거래를 위해 사용해서는 안됩니다.<br />
-
-<br/>
-웹 페이지 (Web service)
+웹 페이지 체험(Web service)
+-----------------------
 
 ## [Detok](http://13.209.109.159/)
 
@@ -168,6 +157,12 @@ Ropsten의 이더리움을 5 ETH 이상 필요로 하며, 30분 ~ 1시간 이상
 
     truffle, nodejs, docker, make가 설치되어 있어야 합니다.
     Ropsten network의 계정에 10eth이상 소지해야 합니다.
+    컨트렉트 Deploy 과정을 수행하실 경우, core/decontralized/secret.json
+    {   
+        "mnemonic": "", // Deploy 수행 계정
+        "projectId": "" // Infura를 통한 Deploy를 수행하기 위한 projectid
+    }
+    를 입력하여 파일을 생성해야 합니다.
     소지한 계정의 정보와 infura의 프로젝트 id를 core/decentralized/secrets.json 에 작성해주세요
     
 

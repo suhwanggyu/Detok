@@ -14,7 +14,7 @@ export default ({props, drizzle, drizzleState }) => {
                     
                     <Card.Text style={{'textAlign':'left','paddingLeft':'1rem'}}>
                         {"domain : " + props.domain}<br/>
-                        {"Reward : " + props.rewardAmount + " DFD"}<br/>
+                        {"Reward : " + props.rewardAmount + " DTK"}<br/>
                         Step : <Badge pill variant={randBadge[props.step]}>{procedure[props.step]}</Badge>
                     </Card.Text>
                     </Card.Body>

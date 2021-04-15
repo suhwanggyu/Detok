@@ -82,7 +82,7 @@ export default ({props, drizzle, drizzleState }) => {
                     <Card.Title className={style.cardTitle}>{props.sellerName}</Card.Title>
                     <Card.Text>
                         {props.detailed}<br/>
-                        {props.tokenamount + " DFD"}
+                        {props.tokenamount + " DTK"}
                     </Card.Text>
                     <Button className={style.buyBtn} variant="primary" onClick={(e)=>{handleShow();}}>Buy</Button>
                     </Card.Body>

@@ -9897,8 +9897,8 @@
         }
       },
       "links": {},
-      "address": "0xb524CE6F1b0b6759086d2dbF9F9847eFaf7Ba04f",
-      "transactionHash": "0x7e87a9b1848d6cb9034c120c300e4d4bac93ed391e2bc597f431fa2d995a2bfa"
+      "address": "0x6ee2bBd7ECE07bAc1309c1076D78FcB6fd1666c2",
+      "transactionHash": "0x10563d27cb66bf2f20d3bd9536d7ac9f19ea314004b5fc66b2a99e80f430d124"
     },
     "5777": {
       "events": {
@@ -10055,7 +10055,7 @@
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-14T03:46:49.896Z",
+  "updatedAt": "2021-04-15T04:48:05.802Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "Wanggyu, Suh",

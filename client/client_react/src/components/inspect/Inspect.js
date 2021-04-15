@@ -62,7 +62,7 @@ export default({ drizzle, drizzleState }) => {
                         </div>
                         <Card.Text>
                             {target[0].detailed}<br/>
-                            {target[0].rewardAmount/2 + " DFD"}
+                            {target[0].rewardAmount/2 + " DTK"}
                         </Card.Text>
                         <InspectBtn target={target} handleShow={handleShow} drizzle={drizzle} drizzleState={drizzleState}/>
                     </Card.Body>
